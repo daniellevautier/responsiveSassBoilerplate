@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js"> <!--<![endif]-->        
+<head>
+	<meta charset="utf-8">
+	<!-- Depends how valid you want to be -->
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>-->
+	<title></title>
+	
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	
+	<link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="assets/css/ie.css">
+    <![endif]-->
+
+    <!-- Modernizr for older browsers -->
+    <script src="assets/scripts/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+<div id="container">
+    <header>
+		<div class="search-field">
+			<label for="search">Search: </label>
+			<input type="text" id="search"/>
+		</div>
+    </header>
+	<div class="wrapper">
+		<h1>Hello World.</h1>
+		<h2>This is my second heading</h2>
+		<h3>This is my third heading</h3>
+		<p>This is a paragraph with a <a href="#">link</a></p>
+		<hr/>
+		<ul>
+			<li>Unordered list item 1</li>
+			<li>Unordered list item 2</li>
+			<li>Unordered list item 3</li>
+		</ul>
+		<ol>
+			<li>Ordered list item 1</li>
+			<li>Ordered list item 2</li>
+			<li>Ordered list item 3</li>
+		</ol>
+		<h3>Definition lists are our friends</h3>
+		<dl>
+			<dt>Do I always need a table?</dt>
+			<dd>No.</dd>
+			<dt>Will you use a table one day?</dt>
+			<dd>Probably.</dd>
+		</dl>
+		<h3>Ok now I need a table...</h3>
+		<table>
+			<tr>
+				<th>Cats</th>
+				<th>Squirrels</th>
+				<th>Other</th>
+			</tr>
+			<tr>
+				<td>Meow</td>
+				<td>Squeak</td>
+				<td>Aww</td>
+			</tr>
+			<tr>
+				<td>Meow</td>
+				<td>Nuts</td>
+				<td>Aww</td>
+			</tr>
+			<tr>
+				<td>Meow</td>
+				<td>Squeak</td>
+				<td>Aww</td>
+			</tr>
+		</table>
+		<figure>
+			<img src="assets/images/cat.jpg" alt="Cat"/>
+			<figcaption>Aww. This is my cat (and a figcaption).</figcaption>
+		</figure>
+		<blockquote>
+			<p>I believe that both cats and squirrels are awesome!</p>
+			 <small class="author">- Danielle Vautier</small>
+		</blockquote>
+		
+		<h3>This is a simple responsive form</h2>
+		<form class="form">
+			<div class="message error">
+				<p><strong>Oopsies!</strong></p>
+				<p>This is an error message with a helpful <a href="#">link</a></p>
+			</div>
+			<div class="message success">
+				<p><strong>Winner!</strong></p>
+				<p>This is a success message with a helpful <a href="#">link</a></p>
+			</div>
+			<fieldset>
+				<legend>Simple form stuff</legend>
+				<small><span class="required">*</span> indicates a required field</small>
+					<div class="form-field-wrapper">
+						<label for="text">Plain Text Field</label>
+						<input type="text" id="text"/>
+					</div>
+					<div class="form-field-wrapper">
+						<label for="smalltext">Small Text Field</label>
+						<input type="text" id="smalltext" class="small-input"/>
+					</div>
+					<div class="form-field-wrapper">
+						<label for="email">Email Field <span class="required">*</span></label>
+						<input type="email" id="email" required="required"/>
+					</div>
+					<div class="form-field-wrapper">
+						<label for="password">Password Field <span class="required">*</span></label>
+						<input type="password" id="password" required="required"/>
+					</div>
+					<div class="form-field-wrapper">
+						<label for="textarea">Textarea <span class="tip">(to tell me how much you love cats)</span></label>
+						<textarea id="textarea" rows="7"></textarea>
+					</div>
+					<div class="form-field-wrapper">
+						<label for="select">Select box</label>
+						<select id="select">
+							<option value="0">Please select...</option>
+							<option>Cat</option>
+							<option>Squirrel</option>
+						</select>
+					</div>
+				</legend>
+			</fieldset>
+			<fieldset>
+				<legend>More forms stuff</legend>
+				<div class="form-field-wrapper">
+					<label for="dd">Multi Select box</label>
+					<select id="dd">
+						<option value="0">DD</option>
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+						<option>04</option>
+					</select>
+					<select id="mm">
+						<option value="0">MM</option>
+						<option>01</option>
+						<option>02</option>
+						<option>03</option>
+						<option>04</option>
+					</select>
+					<select id="mm">
+						<option value="0">YYYY</option>
+						<option>1987</option>
+						<option>1988</option>
+						<option>1989</option>
+						<option>1990</option>
+					</select>
+				</div>
+				<div class="form-field-wrapper checkboxes">
+				<label>Select all favourites...</label>
+					<input type="checkbox" name="checkboxes" id="Cat"/>
+					<label for="Cat" class="small-label">Cat</label>
+					<input type="checkbox" name="checkboxes" id="Squirrel"/>
+					<label for="Squirrel" class="small-label">Squirrel</label>
+					<input type="checkbox" name="checkboxes" id="Other"/>
+					<label for="Other" class="small-label">Other</label>
+				</div>
+				<div class="form-field-wrapper radio-buttons">
+				<label>Select one favourite...</label>
+					<input type="radio" name="radio" id="Cat2"/>
+					<label for="Cat2" class="small-label">Still Cat</label>
+					<input type="radio" name="radio" id="Squirrel2"/>
+					<label for="Squirrel2" class="small-label">Squirrel</label>
+				</div>
+				<div class="form-field-wrapper">
+				<label for="date">Pick a date...</label>
+					<input type="date" name="date" id="date" value=""  />
+				</div>
+			</fieldset>
+			<input type="submit" value="Submit">
+			<input type="button" value="Button">
+			<input type="reset" value="Reset">
+			or <a href="#">Cancel</a>
+		</form>
+	</div>
+    <footer>
+    </footer>
+</div> <!--! end of #container -->
+
+<!-- JavaScript at the bottom for fast page loading -->
+
+
+<!-- Javscript library to excute JS based on media queries -->
+<!--<script src="assets/scripts/enquire.js"></script>-->
+
+<!-- For any custom JS -->
+<!--<script src="assets/scripts/custom.js"></script>-->
+
+</body>
+</html>
