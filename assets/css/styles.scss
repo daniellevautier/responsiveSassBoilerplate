@@ -27,7 +27,14 @@ Danielle Vautier
        -o-box-shadow: $shadow;
           box-shadow: $shadow;
 }
-
-
-/*------------CSS------------*/
-
+/*
+@font-face {
+    font-family: '';
+    src: url('../fonts/scriptina-webfont.eot');
+    src: url('../fonts/scriptina-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/scriptina-webfont.woff') format('woff'),
+         url('../fonts/scriptina-webfont.ttf') format('truetype'),
+         url('../fonts/scriptina-webfont.svg#scriptinaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    */

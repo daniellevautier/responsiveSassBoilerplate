@@ -44,7 +44,7 @@ a:active, a:hover {
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6, legend {
 	margin: 0;
-	font-family: "BreeSerif", arial, sans-serif;
+	font-family: arial, sans-serif;
 	font-weight: normal;
 	text-rendering: optimizelegibility;
 	color:#333;
@@ -76,7 +76,7 @@ h4, .h4 {
 
 p, ol, ul, dl, address, textarea {
     line-height: 1.4;
-	margin-bottom:16px;
+	margin: 0 0 16px 0;
 	}
 
 small {
