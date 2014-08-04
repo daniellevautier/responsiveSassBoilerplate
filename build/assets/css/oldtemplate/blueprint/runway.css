@@ -1,0 +1,17 @@
+#main
+{
+	width:950px;
+}
+
+.cat
+{
+	width:250px;
+	float:left;
+}
+
+.content
+{
+	width:700px;
+	float:right;
+}
+

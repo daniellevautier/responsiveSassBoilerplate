@@ -1,0 +1,38 @@
+﻿      
+	#wrapper-user ul
+    {
+    	margin-top:20px; 	
+    }
+   
+    #wrapper-user a
+    {
+    	padding-left:10px; 	
+    }
+
+.wrapper-login-row
+{
+	clear:both;
+	padding:5px 0 5px 0;
+}
+
+.wrapper-login-row label
+{
+	width:100px;
+	float:left;
+}
+
+.wrapper-login-row .input-text
+{
+	width:200px;
+	float:left;
+}
+
+.input-submit
+{
+}
+
+.wrapper-login-error p
+{
+	color:Red;
+	font-weight:bold;
+}

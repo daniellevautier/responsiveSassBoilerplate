@@ -1,0 +1,134 @@
+﻿#container-basket{float:left; width: 100%;display: none; margin-top: 20px;}
+#container-basket h2{float:left; width: 100%;}
+#container-basket #colQuantity{float:left; width: 30%;background: #eee;padding: 2%;  }
+#container-basket #colQuantity label{float:left; width: 50%; }
+#container-basket #colQuantity select{float:left; width: 50px; }
+#container-basket #colPrice{float:left; width: 15%; padding: 2%; color: green; font-size: 178%; font-style: normal;font-family: Georgia,Tahoma,Verdana,sans-serif; }
+#container-basket #colBasket{float:right; width: 160px; padding: 0; padding-top:5px; }
+
+#wrapper-size{float:left; width: 100%;}
+#wrapper-size h2, #wrapper-fabric h2 {
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 140%;
+    font-style: normal;
+    color: #a80d02;
+    clear: both;
+    font-family: Georgia,Tahoma,Verdana,sans-serif;
+}
+#wrapper-fabric{float:left; width: 100%;display: none;margin-top: 20px;}
+#wrapper-bed-gallery{ width: 100% !important;float: left;min-height: 100px;}
+
+
+#tabs_wrapper-stuff {
+	width: 490px;
+	margin:0px;
+	padding:0px;
+}
+
+
+#tabs-stuff {
+	list-style: none;
+	padding: 5px 0 4px 0;
+	margin-bottom: 0px;
+	font: 0.95em arial;
+}
+#tabs-stuff li {
+	display: inline;
+	margin-right:3px;
+}
+#tabs-stuff li a {
+	border: 1px solid #b7ac9d;
+	padding: 4px 10px;
+	text-decoration: none;
+	background-color: #e6e2dc;
+	border-bottom: none;
+	outline: none;
+	margin:0 auto;
+	
+}
+#tabs-stuff li a:hover {
+	background-color: #b7ac9d;
+	padding: 4px 10px;
+	color:#FFFFFF;
+}
+#tabs-stuff li.active a {
+	border-bottom: 1px solid #fff;
+	background-color:#5b514f;
+	padding: 4px 10px 5px 10px;
+	border-bottom: none;
+	color:#FFFFFF;
+}
+#tabs-stuff li.active a:hover {
+	background-color:#5b514f;
+	padding: 4px 10px 5px 10px;
+	border-bottom: none;
+}
+
+#tabs-stuff li a.icon_accept {
+	background-image: url(accept.png);
+	background-position: 5px;
+	background-repeat: no-repeat;
+	padding-left: 24px;
+}
+#tabs-stuff li a.icon_accept:hover {
+	padding-left: 24px;
+}
+
+#tabs_content_container-stuff {
+	border: 1px solid #b7ac9d;
+	border-top: none;
+	padding: 10px;
+	width: 468px;
+}
+
+
+#main-image-stuff{ height: 364px;}
+#container-relatedproduct{ width: 100%;float: left;margin-top: 20px;display: none;}
+#container-relatedproduct h4{ color: #4f4541;}
+#container-relatedproduct .rowrelatedproduct{ width: 100%;float: left;}
+#container-relatedproduct .rowrelatedproduct .rowrelatedproduct-left{ width: 28%;float: left;}
+#container-relatedproduct .rowrelatedproduct .rowrelatedproduct-right{ width: 72%;float: right; }
+#container-relatedproduct .rowrelatedproduct .relatedQuantity{ width: 80%;float: right;}
+#container-relatedproduct .rowrelatedproduct .relatedQuantity{float:left; width: 20%;background: #eee;padding: 2%;  }
+#container-relatedproduct .rowrelatedproduct .relatedQuantity label{float:left; width: 50%;}
+#container-relatedproduct .rowrelatedproduct .relatedQuantity select{float:left; width: 50px;}
+#container-relatedproduct .rowrelatedproduct .relatedPrice{float:left; width: 15%; padding: 2%; color: green; font-size: 178%; font-style: normal;font-family: Georgia,Tahoma,Verdana,sans-serif; }
+#container-relatedproduct .rowrelatedproduct .rowrelatedproduct-right span{padding: 2%; color: green; font-style: normal;font-family: Georgia,Tahoma,Verdana,sans-serif; }
+.allrange {padding:10px; border-bottom: 0px solid #666;margin-top: 50px; color:#FFFFFF; background: url('/images/global/flash-brown.png'); background-repeat: no-repeat; background-position: top left;  }
+
+#relatedProduct1AddtoBasket
+{
+    float: right;
+    width: 160px;
+    height: 24px;
+    display: block;
+    background: url('/images/global/bt_addtobasket.png');
+}
+#relatedProduct1removefrombasket
+{
+     float: right;
+    width: 160px;
+    height: 24px;
+    display: block;
+    background: url('/images/global/bt_removefrombasket.png');
+}
+
+#relatedProduct2AddtoBasket
+{
+    float: right;
+    width: 160px;
+    height: 24px;
+    display: block;
+    background: url('/images/global/bt_addtobasket.png');
+}
+#relatedProduct2removefrombasket
+{
+     float: right;
+    width: 160px;
+    height: 24px;
+    display: block;
+    background: url('/images/global/bt_removefrombasket.png');
+}
+

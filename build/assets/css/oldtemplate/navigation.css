@@ -1,0 +1,131 @@
+
+#navigation ul
+{
+	
+}
+
+#navigation li
+{
+	display:inline;	
+	border-left:1px solid #4e4442;
+	
+}
+
+#navigation li a
+{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:105%;
+	padding:0 7px 10px 7px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+
+#navigation li.nav-home
+{
+	display:inline;	
+	border-left:none;
+	
+}
+
+#navigation li.nav-home a
+{
+	padding:0px 7px 0px 0px;
+}
+	
+
+#navigation li a:hover
+{
+	color:#a80d02;
+}
+
+
+
+.special_red
+{
+	color:#cc0000;
+	font-size:112%;
+	
+}
+     
+#wrapper-user li
+{
+	display:inline;	
+}
+
+#wrapper-steps
+{
+	padding-bottom:8px;
+	text-transform:capitalize;
+}
+
+#wrapper-steps .sel
+{
+	color:#7b7c7c;
+}
+
+#wrapper-steps-checkout
+{
+	padding-bottom:20px;
+}
+
+
+
+#steps-checkout-left
+{
+    width: 90px;
+    margin: 0 auto;
+    float: left;
+    text-align: left;
+	background: url(../images/global/steps-arrow-steps.png) no-repeat;
+	font-style:normal;
+	color: #999999;
+	font-size:116%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+ 
+}
+
+
+#steps-checkout-end
+{
+    width: 90px;
+    margin: 0 auto;
+	height:24px;
+    float: left;
+    text-align: left;
+	background:none;
+	font-style:normal;
+	color: #999999;
+	font-size:116%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+ 
+}
+
+
+.checkoutstep-Checkout .nav-checkout
+{
+	color:#ccc;
+}
+
+.checkoutstep-DeliveryAddress .nav-delivery,
+.checkoutstep-DeliveryAddress .nav-checkout
+{
+	color:#ccc;
+}
+
+.checkoutstep-BillingAddress .nav-delivery,
+.checkoutstep-BillingAddress .nav-billing,
+.checkoutstep-BillingAddress .nav-checkout
+{
+	color:#ccc;
+}
+
+
+
+
+
+
+
+
+
+

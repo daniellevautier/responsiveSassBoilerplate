@@ -1,0 +1,321 @@
+
+/*.left
+{
+	float:left;
+	clear:right;
+	padding-bottom:20px;
+}*/
+
+/*.right
+{
+	float:right;
+	padding-bottom:20px;	
+}*/
+
+
+
+.redital
+{
+	color:#a80d02;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:112%;
+	padding-top:4px;
+    	margin-top:4px;
+	font-style:italic;
+	
+}
+
+   .highlight
+    {
+    	padding-bottom:5px;
+		color:#5e5553;
+    	margin-bottom:10px;
+		line-height:24px;
+			margin-top:10px;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-size:140%;    	
+    }
+	
+		   .highlight_nrw
+    {
+    	padding-bottom:5px;
+		width:200px;
+		color:#5e5553;
+    	margin-bottom:10px;
+		line-height:24px;
+			margin-top:10px;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-size:140%; 
+		border:0px solid #ff0000;
+    }
+	
+	   .headtf
+    {
+    	padding-bottom:5px;
+		width:550px;
+		color:#5e5553;
+    	margin-bottom:10px;
+		line-height:20px;
+			margin-top:0px;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-size:140%;    	
+    }
+	
+	
+	   .dark
+    {
+    	color:#262626; 	
+    }
+	
+	  .lge_text
+    {
+    	padding-bottom:5px;
+    	margin-bottom:5px;
+		line-height:24px;
+		width:630px;
+		color:#948672;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-size:140%;    	
+    }
+	
+		  .lge_text_red
+    {
+    	padding-bottom:5px;
+    	margin-bottom:5px;
+		line-height:24px;
+		width:630px;
+		color:#a80d02;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-size:140%;    	
+    }
+	
+	
+	
+	  .scatter_text
+    {
+    	padding-bottom:5px;
+    	margin-bottom:5px;
+		padding-top:15px;
+		line-height:24px;
+		width:630px;
+		color:#948672;
+    	font-family:Arial, Helvetica, sans-serif;
+			border-top:1px solid #b4b4b4;
+    	font-size:140%;    	
+    }
+	
+	
+		  .lge_text_nrw
+    {
+    	padding-bottom:2px;
+    	margin-bottom:2px;
+		line-height:22px;
+		width:490px;
+		color:#948672;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-size:115%;    	
+    }
+	
+	
+		  .lge_text_nrwer
+    {
+    	padding-bottom:5px;
+    	margin-bottom:5px;
+		line-height:24px;
+		width:340px;
+		color:#948672;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-size:140%;    	
+    }
+	
+	h1.homesteps
+
+   {
+    	font-size:16px;
+		font-style:normal;
+    font-family:Arial, Helvetica, sans-serif;
+    	padding-top:15px;
+		padding-bottom:5px;
+    	color: #a80d02;
+		background-color: #ffffff;
+		margin-bottom:5px;
+    }  
+	
+	
+	h1.homesteps span
+
+   {
+    	font-size:16px;
+		font-style:italic;
+    	font-family: Georgia,Tahoma,Verdana,sans-serif;
+    	padding-top:5px;
+		padding-bottom:5px;
+    		color: #a80d02;
+		background-color: #ffffff;
+		margin-bottom:5px;
+    }
+	
+	
+	.fl p
+
+   {
+    	color: #948672;
+	
+    }
+	
+			  .small
+    {
+    	
+    	font-size:11px;
+		line-height:14px;
+		width:125px;
+    }
+	
+	.steps_instr
+{
+	color:#666666;
+	font-size:14px;
+	margin-bottom:10px;
+	padding-bottom:10px;
+	
+}
+
+.stocklist-box
+{
+	float:left;
+	text-align:center;
+	width:180px;
+	border:0px solid #ff0000;
+	
+}
+
+.product-description-stocklist
+{
+	line-height:14px !important;
+	padding-left:0px;
+	padding-top:0px;
+	padding-bottom:10px;
+}
+
+  .lge_text_feedback
+    {
+    	padding-bottom:1px;
+    	margin-bottom:5px;
+		line-height:24px;
+		width:630px;
+		color:#948672;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-size:140%;    	
+    }
+	
+		  .lge_text_nowth
+    {
+    	padding-bottom:5px;
+    	margin-bottom:5px;
+		line-height:24px;
+		color:#948672;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-size:140%;    	
+    }
+	
+	   .highlight_feedback
+    {
+    	padding-bottom:5px;
+		font-style:italic;
+		width:600px;
+	color:#a80d02;
+    	margin-bottom:15px;
+		line-height:24px;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-size:120%;    	
+    }
+	
+	#special-wrapper-buy
+{
+	clear:both;
+	font-family: Georgia,Tahoma,Verdana,sans-serif;
+	height:30px;
+	width:100%;
+	padding-top:10px;
+	amargin-bottom:10px;
+}
+
+#special-wrapper-buy .style-name
+{
+	font-size:21px;
+	padding-right:10px;
+	float:left;
+}
+
+#special-wrapper-buy .size-name
+{
+	font-size:17px;
+	color:#a80d02;
+	font-weight:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	padding-top:4px;
+	amargin-bottom:10px;
+	float:left;
+	border:0px solid #00ccff;
+}
+
+#special-line
+{
+	border-bottom:1px dotted #ccc;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+#special-line-anchor
+{
+	border-top:1px dotted #ccc;
+	text-align:right;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.wrapper-promofeedback
+{
+	padding:.8em;margin-bottom:1em;border:2px solid #ddd;
+	background:#E6EFC2;color:#264409;border-color:#C6D880
+}
+
+
+ul.anch-text
+{
+list-style-type: none;
+padding: 0;
+margin: 0;
+text-align: left;
+width: 16em;
+
+}
+
+ul.anch-text li
+{
+background:url(../images/global/red_arrow.gif);
+background-repeat: no-repeat;
+background-position: .4em .4em;
+padding-left: 1.5em;
+padding-bottom: .5em;
+margin: 0.5em 0;
+border-bottom:1px solid #ccc;
+}
+
+
+.bn-top
+{
+	background:url(../images/global/red_arrow_top.gif);
+	background-repeat: no-repeat;
+background-position: .4em .4em;
+padding-left: 1.5em;
+}
+
+
+
+
+
+
+
+
+

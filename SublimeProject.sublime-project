@@ -2,7 +2,8 @@
 	"folders":
 	[
 		{
-			"path": "/C/_Development/responsiveSassBP"
+			"follow_symlinks": true,
+			"path": "source"
 		}
 	]
 }

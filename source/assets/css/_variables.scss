@@ -1,0 +1,49 @@
+@mixin viewport($width) {
+  @if $mediaQueries {
+  @media only screen and (min-width: $width + px) {@content;}
+  }
+  @else{
+      @content;
+  }
+}
+
+//CSS Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+     -moz-box-shadow: $shadow;
+      -ms-box-shadow: $shadow;
+       -o-box-shadow: $shadow;
+          box-shadow: $shadow;
+}
+
+@mixin box-sizing() {
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -ms-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+$desktop: 960;
+
+/*Fonts*/
+$primaryFont: Georgia, Times, sans-serif;
+$secondaryFont: Arial, sans-serif;
+
+/*Colours*/
+$red:#A80D02;
+
+/*Universal Classes*/
+.primary-colour {color:$red;}
+.secondary-colour {color:$red;}
+.primary-font {font-family:$primaryFont!important;}
+.secondary-font {font-family:$secondaryFont!important;}
+
+/*@font-face {font-family: 'IntroLight';src: url('../fonts/2AEC8A_0_0.eot');src: url('../fonts/2AEC8A_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AEC8A_0_0.woff') format('woff'),url('../fonts/2AEC8A_0_0.ttf') format('truetype');} */

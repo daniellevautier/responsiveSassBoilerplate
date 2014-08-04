@@ -1,0 +1,397 @@
+
+#special-home-container
+{
+	
+	width:720px;
+	height:148px;
+	padding-top:0px;
+	margin-top:0px;
+	border:0px solid blue;
+}
+
+.special-home-fl
+{
+	
+	width:354px;
+	float:left;
+		height:160px;
+	padding-top:0px;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:left;
+	border:0px solid #3f3a39;
+	background: #edeae5 url(../images/global/showroom_home_bg.jpg);
+	background-repeat: no-repeat;
+background-position: 183px 0px;
+	
+}
+
+
+
+.special-home-fr
+{
+	
+	width:354px;
+	float:right;
+	height:160px;
+	padding-top:0px;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align:left;
+	border:0px solid #3f3a39;
+	background: #edeae5 url(../images/global/fabrics_home_bg.jpg);
+	background-repeat: no-repeat;
+background-position: 183px 0px;
+}
+
+.special-home-fl a, .special-home-fr a
+{
+	color:#928167;
+	
+}
+
+
+
+.special-home-fr p
+{
+	
+	font-size:12px;
+	line-height:13px;
+	padding:3px 0px 0px 10px;
+	color:#494542;
+}
+
+
+.special-home-fl p
+{
+	
+	font-size:12px;
+	line-height:16px;
+	padding:3px 0px 0px 10px;
+	color:#494542;
+}
+
+.special-home-fl H2, .special-home-fr H2
+{
+	
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	padding:4px 0px 0px 10px;
+	margin:0px 0px 0px 0px;
+}
+
+
+
+.special-home-fab
+{
+	
+	width:354px;
+	float:left;
+	height:90px;
+	padding:6px 0px 6px 6px;
+	margin-top:0px;
+	margin-bottom:0px;
+	text-align:left;
+	background:url(../images/fabric_samples.png) no-repeat;
+}
+
+.special-home-fab p
+{
+	
+	font-size:11px;
+	line-height:12px;
+	width:210px;
+	color:#3f3a39;
+}
+
+   .special-highlight
+    {
+    	padding-bottom:0px;
+		color:#5e5553;
+    	margin-bottom:16px;
+		line-height:18px;
+		margin-top:10px;
+    	font-family:Arial, Helvetica, sans-serif;
+    	font-size:130%;    	
+    }
+	
+	#special-top
+{
+	
+	width:100%; height:211px;
+	border:0px solid yellow;
+	font-family:arial, verdana, sans-serif;
+}
+
+#special-top li a {
+	
+	
+	color:#FFF; text-decoration:none; padding:2px 0 0 0; cursor:pointer; font-size: 14px;background-image: url(../images/arrow.gif); background-repeat: no-repeat; background-position: 0em .35em; padding-left: .8em;
+
+
+
+}
+
+#special-top li:hover a,
+#special-top a:hover
+{text-decoration:underline; color:#FFF;}
+
+
+
+
+
+#special-base
+{
+	
+	width:352px; height:24px;
+	
+}
+
+#special-base li
+{
+	
+	display: inline;
+	text-decoration:none;
+}
+
+
+
+#special-base li a {height:24px; text-align:left; display:block; float:left; color:#FFF; text-decoration:none;  margin:0px auto;  cursor:pointer; font-size: 14px; border:0px solid #3f3a39;}
+
+#special-base li a.parsons {background-image: url(../images/arrow.gif); background-repeat: no-repeat; background-position: 1.2em .35em; padding-left: .2em; border:0px solid yellow; width:96px; text-align:center;}
+#special-base li a.fittleworth {background-image: url(../images/arrow.gif); background-repeat: no-repeat; background-position: 0.8em .35em; padding-left: .2em; border:0px solid yellow; width:120px; text-align:center;}
+#special-base li a.hungerford {background-image: url(../images/arrow.gif); background-repeat: no-repeat; background-position: 0.7em .35em; padding-left: .2em;border:0px solid yellow; width:110px; text-align:center;}
+
+
+#special-base li:hover a,
+#special-base a:hover {text-decoration:underline; color:#FFF;}
+
+
+
+
+#navbox {padding:0; margin-top:10px; list-style:none; height:137px; position:relative; z-index:200; font-family:arial, verdana, sans-serif; width:720px;}
+#navbox li.topsofa {display:block; width:171px; float:left; text-align:center;  background:#3f3a39 url(../images/shop_sofas_minipic.jpg); background-repeat: no-repeat; margin-right:12px; padding-top:2px; border:0px solid #3f3a39;}
+#navbox li.topsofabed {display:block; width:171px; float:left; text-align:center;  background:#3f3a39 url(../images/shop_sofabeds_minipic.jpg);background-repeat: no-repeat;  margin-right:12px; padding-top:2px; border:0px solid #3f3a39;}
+#navbox li.topcorner {display:block; width:171px; float:left; text-align:center;  background:#3f3a39 url(../images/shop_cornersofas_minipic.jpg); background-repeat: no-repeat; margin-right:12px; padding-top:2px; border:0px solid #3f3a39;}
+#navbox li.topchair {display:block; width:171px; float:left; text-align:center;  background:#3f3a39 url(../images/shop_chairs_minipic.jpg); background-repeat: no-repeat; margin-right:0px; padding-top:2px; border:0px solid #3f3a39;}
+
+#navbox li a {display:block; color:#FFF; float:left; height:135px; width:169px; text-decoration:none; padding:0px 0 0 0;margin:0px 0 0 0; cursor:pointer; border:0px solid #3f3a39; font-size: 14px;}
+
+#navbox li a.sofa {background-image: url(../images/arrow.gif); background-repeat: no-repeat; background-position: 4.1em .35em; padding-left: .2em;}
+#navbox li a.sofabed {background-image: url(../images/arrow.gif); background-repeat: no-repeat; background-position: 3.3em .35em; padding-left: .2em;}
+#navbox li a.corner {background-image: url(../images/arrow.gif); background-repeat: no-repeat; background-position: 2.6em .35em; padding-left: .2em;}
+#navbox li a.chairs {background-image: url(../images/arrow.gif); background-repeat: no-repeat; background-position: 4em .35em; padding-left: .2em;}
+
+#navbox li:hover a,
+#navbox a:hover {text-decoration:underline; color:#FFF;}
+
+
+
+
+#navbox li:hover {position:relative; z-index:200;}
+#navbox a:hover {position:relative; white-space:normal; z-index:200;}
+
+
+
+.spectextlnk a	{font-size: 14px;color: #ffffff; text-decoration:underline;}
+.spectextlnk a hover	{ font-size: 14px;color: #ffffff; text-decoration:underline;}
+
+#home-text-content
+{
+	
+	abackground:lightblue;
+	padding:10px 10px 15px 10px;
+	margin-top:0px;
+	clear: left;
+	width: 698px;
+	border:1px solid #cecece; 
+
+	
+}
+
+
+#home-text-content-promise
+{
+	
+	abackground:pink;
+	padding:10px 55px 15px 20px;
+	margin-bottom:10px;
+	clear: left;
+	width: 660px;
+	height:60px;
+	float:left;
+	border:1px solid #cecece; 
+
+	
+}
+
+#home-text-content-promise a
+{
+	text-decoration:underline;
+
+	
+}
+
+#home-text-content-wide
+{
+	
+	abackground:pink;
+	padding:10px 55px 15px 20px;
+	margin-bottom:10px;
+	clear: left;
+	width: 660px;
+	height:150px;
+	float:left;
+	border:1px solid #cecece; 
+
+	
+}
+
+#home-text-content-2013
+{
+	
+	padding:13px 0;
+	margin-bottom:10px;
+	clear: left;
+	width: 668px;
+	height:150px;
+	float:left;
+	border:0px solid #cecece; 
+
+	
+}
+
+#home-text-content-2013 h4
+{
+	color:#4c4847;
+	font-size:19px;
+	padding-bottom:12px;
+
+	
+}
+
+#home-text-content-2013 p
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:13px;
+	line-height:20px;
+	margin:3px 0;
+
+	
+}
+
+#home-quote-box
+
+{
+	
+	abackground:lightblue;
+	padding:0px 0px 0px 0px;
+	margin-top:0px;
+	float:right;
+	width: 237px;
+	height:272px;
+	border:1px solid #cecece; 
+
+	
+}
+
+#home-quote-box h4
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	color:#4c4847;
+	padding:5px 0px 5px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+#designer-fabrics
+
+{
+	
+	abackground:lightblue;
+	padding:0px 0px 0px 0px;
+	margin-bottom:11px;
+	float:right;
+	width: 237px;
+	height:84px;
+	border:1px solid #cecece; 
+
+	
+}
+
+#designer-fabrics h4
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	color:#4c4847;
+	padding:5px 0px 5px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+
+
+
+
+#home-text-content span, #home-text-content-wide span
+{
+	color:#000;
+
+	
+}
+
+#home-text-content-wide a, #home-quote-box a, #home-text-content-promise a
+{
+	color:#928167;
+
+	
+}
+
+#home-text-content-wide a:hover, #home-quote-box a:hover, #home-text-content-promise a:hover
+{
+	color:#4c4b4b;
+
+	
+}
+
+#home-text-content h4, #home-text-content-wide h4, #home-text-content-promise h4
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	color:#4c4847;
+	padding:6px 0px 10px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+
+
+/* homepage testing */
+
+#frontpage-navbox {padding:0; margin-top:0px; margin-bottom:10px; list-style:none; height:148px; position:relative; z-index:200; font-family:arial, verdana, sans-serif; width:986px;}
+#frontpage-navbox li.frontshowrooms {display:block; width:239px; float:left; text-align:center;  background:#fff url(../images/homepage_beds.jpg); background-repeat: no-repeat; margin-right:10px; padding-top:0px; border:0px solid #3f3a39;}
+#frontpage-navbox li.frontfreefabrics {display:block; width:239px; float:left; text-align:center;  background:#fff url(../images/homepage_fabric.jpg);background-repeat: no-repeat;  margin-right:0px; padding-top:0px; border:0px solid #3f3a39;}
+#frontpage-navbox li.frontproducts {display:block; width:239px; float:left; text-align:center;  background:#fff url(../images/homepage_oursofas.jpg); background-repeat: no-repeat; margin-right:10px; padding-top:0px; border:0px solid #3f3a39;}
+#frontpage-navbox li.frontpromise {display:block; width:239px; float:left; text-align:center;  background:#fff url(../images/homepage_contemporary.jpg); background-repeat: no-repeat; margin-right:10px; padding-top:0px; border:0px solid #3f3a39;}
+
+#frontpage-navbox li a {display:block; color:#FFF; float:left; height:157px; width:169px; text-decoration:none; padding:0px 0 0 0;margin:0px 0 0 0; cursor:pointer; border:0px solid #3f3a39; font-size: 14px;}
+
+
+#frontpage-navbox li:hover a,
+#frontpage-navbox a:hover {text-decoration:none; color:#FFF;}
+
+
+/* homepage March 2013 */
+
+#frontpage-navbox-2013 {padding:0; margin-top:11px; margin-bottom:10px; list-style:none; height:190px; position:relative; z-index:200; font-family:arial, verdana, sans-serif; width:720px;}
+#frontpage-navbox-2013 li.frontshowrooms {display:block; width:231px; float:left; text-align:center; background:none; margin-right:0px; padding-top:0px; border:0px solid #3f3a39;}
+#frontpage-navbox-2013 li.frontfreefabrics {display:block; width:230px; float:left; text-align:center;  background:orange;  margin-right:0px; padding-top:0px; border:0px solid #3f3a39;}
+#frontpage-navbox-2013 li.frontproducts {display:block; width:232px; float:left; text-align:center;  background:none; margin-right:13px; padding-top:0px; border:0px solid #3f3a39;}
+#frontpage-navbox-2013 li.frontpromise {display:block; width:231px; float:left; text-align:center;  background:none; margin-right:13px; padding-top:0px; border:0px solid #3f3a39;}
+
+#frontpage-navbox-2013 li a {display:block; color:#544a4a;  text-decoration:none; padding:3px 0 0 0;margin:0px 0 0 0; cursor:pointer; font-family:Georgia, "Times New Roman", Times, serif; font-size: 15px; text-align:left;}
+
+
+#frontpage-navbox-2013 li:hover a,
+#frontpage-navbox-2013 a:hover {text-decoration:underline; color:#000;}
+
+
+

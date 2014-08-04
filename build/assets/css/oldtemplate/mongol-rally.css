@@ -1,0 +1,551 @@
+   body 
+    { 
+    	font-family: Tahoma, Verdana, sans-serif;
+    	color:#7b7c7c;
+    	text-align:center;
+		background:#fff url(../images/background_web.png) repeat-x;
+    }
+    
+
+
+
+#wrapper-content-mongol
+    {
+    	width:100%;
+    	abackground-color:#f7f7e1;
+		min-height:600px;
+    	clear:both;	
+    }
+	
+	#wrapper-content-mongol-main
+    {
+    	width:986px;
+    	abackground-color:blue;
+		min-height:600px;
+		margin-left:107px;
+    	text-align:left
+    }
+    
+    
+	p 
+	  {
+		margin-bottom:12px;
+    }
+    
+       
+    #wrapper-frame
+    {
+		width:1200px;
+    	margin: 0 auto;
+		text-align:left;
+		abackground-color:#060;
+    }
+    
+    #wrapper-header
+    {
+    	height:149px;
+		width:986px;
+		margin-left:107px;
+    	border-bottom:1px solid #ccc;
+		background:url(../images/global/order_now_header.gif) no-repeat;
+    }
+    
+    #wrapper-header.blue-monday
+	{
+		background: url(/images/global/order_now_header_blue_monday.gif) no-repeat;
+	}
+	
+	#wrapper-header.valentines-day
+	{
+		background: url(/images/global/order_now_header_valentines_day.gif) no-repeat;
+	}
+	
+	#wrapper-header.spring
+	{
+		background: url(/images/global/order_now_header_spring.gif) no-repeat;
+	}
+   
+    #wrapper-logo
+    {
+    	float:left; 
+    	height:125px;
+    	width:250px;
+    }
+    
+    #wrapper-logo a
+    {
+    	display:block;
+    	width:100%;
+    	height:102px;
+    	abackground:url(/images/global/lg_sas.gif) no-repeat;
+    }
+    
+    #wrapper-logo a span
+    {
+    	display:none;
+    }
+    
+	
+	   #wrapper-header-right
+    {
+    	float:right;
+		padding-top:5px;
+		margin-right:2px; 
+		/* margin-right:260px;*/
+		
+    	height:50px; 
+		border:0px solid #ff0000;
+    }
+	
+	.header-phone
+	
+	 {
+   		text-align:right;
+		color:#7b7c7c;
+		padding: 0 0 0 0;
+		margin: 0 0 0 0;
+    }
+	
+	.header-basket
+	
+	 {
+		 text-align:right;
+		 	padding: 0 0 0 0;
+		margin: 0 0 0 0;
+    }
+	
+	.header-phone
+	
+	 {
+   		text-align:right;
+		color:#7b7c7c;
+    }
+	
+	
+	.header-basket a
+	
+	 {
+		 color:#666;
+    }
+	
+	
+		.header-phone span
+	
+	 {
+    	color:#a80d02;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:162%;    		
+    }
+	
+    
+    #navigation
+	{
+	
+		clear:both;
+		float:left;
+		font-size:85%;		
+		width:100%;
+	}
+	
+	
+    #wrapper-content-mongol-map
+    {
+    	width:1200px;
+		height:460px;
+    	padding-top:10px;
+		margin-top:0px;
+		margin-right:0px;
+		abackground-color:lightgreen;
+    }
+	
+	
+	   #wrapper-content-mongol-map-thin
+    {
+    	width:1200px;
+		height:300px;
+    	padding-top:10px;
+		margin-top:0px;
+		margin-right:0px;
+		abackground-color:lightgreen;
+    }
+	
+	#wrapper-content-mongol-map .title {
+	position:relative;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	bottom:450px !important;
+	left:988px !important;
+	color:#FFF;
+	width:105px;
+	margin:0px 0px;
+	padding:20px 0px;
+	display:block;
+	font-size:24px;
+	z-index:30;
+	abackground-color:lightgreen;
+}
+
+
+#wrapper-content-mongol-map .title p {
+	padding:2px 0px;
+	margin:0px 0px;
+}
+
+
+#wrapper-content-mongol-map .where-are-we {
+	position:relative;
+	background-image:url(../images/mongol-rally/info-box.png);
+	background-repeat:no-repeat;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-weight:normal;
+	bottom:500px !important;
+	left:700px !important;
+	color:#483d34;
+	width:202px;
+	height:119px;
+	margin:0px 0px;
+	padding:5px 10px;
+	display:block;
+	font-size:12px;
+	line-height:16px;
+	z-index:40;
+}
+
+
+#wrapper-content-mongol-map .where-are-we span {
+	
+	font-weight:bold;
+	color:#e7770a;
+}
+	
+       
+    #wrapper-content-left-mongol
+    {
+    	float:left;
+    	width:410px;
+    	padding-top:10px;
+		margin-top:0px;
+		margin-right:16px;
+		abackground-color:lightblue;
+    }
+	
+	
+	
+	#wrapper-content-left-mongol a, #wrapper-content-middle-blog a, #wrapper-content-right-blog a
+{
+	color:#7e7059;
+	
+}
+
+#wrapper-content-left-mongol a:hover, #wrapper-content-middle-blog a:hover, #wrapper-content-right-blog a:hover
+{
+	color:#970000;
+	
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	    #wrapper-content-right-mongol
+    {
+    	float:left;
+    	width:291px;
+		text-align:left;
+			padding-top:10px;
+		margin-top:0px;
+		margin-right:16px;
+		abackground-color:lightpink;
+    	
+    }
+	
+		    .mongol-headline
+    {
+    	color:#e7770a;
+		font-style:italic;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	padding-top:10px;
+    	
+    }
+	
+	
+	#wrapper-content-slideshow
+{
+	position:relative;
+	margin: 0 auto;
+	padding: 0 auto;
+	width: 262px;
+	height: 202px;
+	background-image:url(../images/mongol-rally/flickr_bg.jpg);
+	background-repeat:no-repeat;
+}
+	
+	
+	
+	  #wrapper-mongol-about
+    {
+    	float:left;
+    	width:294px;
+    	padding-top:10px;
+		margin-top:0px;
+		margin-right:16px;
+		abackground-color:brown;
+    }
+	
+	    #wrapper-mongol-social
+    {
+    	float:right;
+    	width:250px;
+			margin-top:10px;
+    	padding:0px;
+		abackground-color:#e6e4d5;
+    	
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	    #wrapper-content-left a
+    {
+		text-decoration:none;
+    }
+	
+	    #wrapper-content-left a:hover
+    {
+		text-decoration:none;
+	color:#a80d02;
+    }
+	
+	
+	
+	
+    
+    #wrapper-content-left img
+    {
+    	border-top:4px solid #fff;
+    	border-left:0px solid #fff;
+    	border-bottom:4px solid #fff;
+    }   
+    
+   #wrapper-content-left.noborder img
+    {
+    	border:0px !important;
+    } 
+    
+    
+
+	
+    
+ 
+ 
+    
+    #footer
+    {
+    	clear:both; 
+    	padding-top:50px;
+    	border-bottom:1px solid #ccc;	
+    }
+    
+    #wrapper-content-left .btn img
+	{
+		border:0;
+	}
+	
+	    #instore-head
+    {
+    	float:right; 
+    	height:80px;
+    	width:250px;
+		border:0px solid #ff0000;
+		
+    }
+    
+    #instore-head a
+    {
+    	display:block;
+    	width:100%;
+    	height:80px;
+    }
+    
+    #instore-head a span
+    {
+    	display:none;
+    }
+    
+
+    
+
+    
+      
+	    #wrapper-promo
+    {
+    	float:left; 
+    	height:125px;
+    	width:100px;
+    }
+    
+    #wrapper-promo a
+    {
+    	display:block;
+    	width:100%;
+    	height:102px;
+    }
+    
+    #wrapper-promo a span
+    {
+    	display:none;
+    }
+
+
+	
+
+	
+	
+	  .wrapper-gallery
+    {
+		width:236px;
+		float:right;
+		padding-right:10px;
+    	margin: 0 auto;
+		text-align:right;
+		border:0px solid #ff0000;
+    }	
+    
+		  .wrapper-gallery a
+    {
+			font-size:12px;
+		line-height:18px;
+		font-family:Arial, Helvetica, sans-serif;
+		color:#666666;
+		font-style:normal;
+    }
+    
+	
+	    
+    #wrapper-content-right-special
+    {
+    	float:right;
+    	width:253px;
+    	padding-top:5px;
+		border-left:0px dotted #4e4442;
+    	
+    }
+    
+    /* blogs */
+
+    #wrapper-content-left-blog
+    {
+    	float:left;
+    	width:154px;
+    	padding-top:10px;
+		margin-top:0px;
+		margin-right:16px;
+		abackground-color:lightblue;
+    }
+	
+	
+	
+	    #wrapper-content-middle-blog
+    {
+    	float:left;
+    	width:500px;
+			margin-top:0px;
+    	padding-top:10px;
+		margin-right:16px;
+		abackground-color:yellow;
+    	
+    }
+	
+	
+		    #wrapper-content-middle-blog h2
+    {
+		color:#6d6358;
+		font-size:18px;
+		margin-bottom:12px;
+    	
+    }
+	
+	    #wrapper-content-right-blog
+    {
+    	float:right;
+    	width:231px;
+			margin-top:10px;
+    	padding:10px;
+		border:1px solid #cecece; 
+		abackground-color:pink;
+    	
+    }
+	
+		    #wrapper-content-right-blog-comp
+    {
+    	float:right;
+    	width:160px;
+		height:50px;
+			margin-top:10px;
+    	padding:30px 81px 10px 10px;
+		border:1px solid #cecece; 
+		background:url(../images/mongol-rally/win-charlie-the-chair.jpg);
+		background-repeat:no-repeat;
+    	
+    }
+	
+		    #wrapper-content-right-blog h2
+    {
+		color:#6d6358;
+		font-size:18px;
+		margin-bottom:12px;
+    	
+    }
+	
+	#wrapper-content-right-blog p {
+	padding:2px 0px;
+	margin:0px 0px;
+}
+    
+	
+	ul.anch-text
+{
+list-style-type: none;
+padding: 0;
+margin: 0;
+text-align: left;
+
+
+}
+
+ul.anch-text li
+{
+background:url(../images/global/red_arrow.gif);
+background-repeat: no-repeat;
+background-position: .3em .4em;
+padding-left: 1.5em;
+padding-bottom: .3em;
+margin: 0em 0;
+border-bottom:0px solid #ccc;
+}
+
+
+	
+	#special-line
+{
+	border-bottom:1px dotted #999999;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+	
+
+    
+    
+        
+  
+
+	
+	

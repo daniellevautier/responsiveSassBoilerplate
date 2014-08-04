@@ -1,0 +1,62 @@
+﻿.nav-footer-section
+{
+	width:183px;
+	float:left;
+	padding:15px 0 0 0;
+	margin-bottom:20px;
+		border:0px solid pink;		
+}
+
+.nav-footer-section p
+{
+	font-weight:normal;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	padding-bottom:10px;
+	color:#666666;
+	text-transform:uppercase;
+	font-size:81%;
+	
+}
+
+.nav-footer-section p.contact-us
+{
+	padding: 30px 0 10px 0;
+}
+
+.nav-footer-section p.telephone
+{
+	padding: 10px 0 0 0;
+	color: #a80d02;
+	font-size: 1.6em;
+}
+
+.nav-footer-section li
+{
+	height:15px;
+	font-size:77%;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+
+.footer-right
+{
+	width:140px;
+	text-align:left;
+	padding-top:10px;
+	margin-bottom:15px;
+	float:left;
+	border:0px solid #ff0000;	
+		
+	
+}
+
+.footer-barclays
+{
+	width:253px;
+	text-align:left;
+	padding-top:15px;
+	margin-bottom:15px;
+	float:right;
+	border:0px solid blue;	
+		
+	
+}

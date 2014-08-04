@@ -1,0 +1,167 @@
+﻿/**** assets *****/
+
+.wrapper-assetlist
+{
+	width:100%;
+	clear:both;
+}
+
+.asset-left
+{
+	float:left;
+	width:250px;
+}
+
+.asset-right
+{
+	float:right;
+	width:250px;	
+}
+
+.asset-image
+{
+	float:left;
+	width:150px;
+}
+
+.asset-content
+{
+	float:left;
+	width:150px;
+	padding-top:5px;
+}
+
+.asset-content h4
+{
+	color:#eee;
+}
+
+.asset-content p
+{
+	margin-top:5px;
+}
+
+#wrapper-asset-left
+{
+	margin-top:20px;
+	width:340px;
+	float:left;	
+}
+
+#wrapper-asset-left #placeholder
+{
+	width:332px;
+	height:249px;
+}
+
+#wrapper-asset-left ul.gallery
+{
+	margin-top:10px;
+	padding-bottom:0;	
+}
+
+#wrapper-asset-left ul.gallery li
+{
+	list-style-type:none;
+	display:inline;
+	width:100px !important;
+	padding-right:6px;
+}
+
+#wrapper-asset-left ul.gallery li.lastimage
+{
+	padding-right:0px;
+}
+
+#wrapper-asset-left img
+{
+	border:1px solid #b3cde4;
+}
+
+#wrapper-asset-right
+{
+	margin-top:20px;
+	width:310px;
+	float:right;
+	color:#c1c1c1;
+}
+
+#wrapper-asset-left h5
+{
+	width:332px;
+	border-bottom:1px dashed #616564;
+	font-weight:bold;
+	padding-bottom:5px;	
+}
+
+#wrapper-asset-right h5
+{
+	width:100%;
+	border-bottom:1px dashed #616564;
+	font-weight:bold;
+	padding-bottom:5px;	
+}
+
+.wrapper-asset-section
+{
+	padding-top:10px;	
+	padding-bottom:10px;	
+}
+
+.wrapper-asset-section a
+{
+	color:#616564;
+	text-decoration:none;
+} 
+
+.wrapper-asset-section a:hover
+{
+	text-decoration:underline;
+}
+
+#wrapper-asset-right .wrapper-asset-section ul li
+{
+	list-style-type:square !important;
+	margin-left:30px !important;
+}
+
+.wrapper-assets-vertical
+{
+	clear:both;
+	width:100%;
+	height:120px;	
+}
+
+.wrapper-assets-vertical .asset-content
+{
+	width:510px;
+	float:right !important;	
+}
+
+.wrapper-assets-border
+{
+	height:15px;
+	border-top:1px solid #575654;
+	clear:both;
+	margin-top:15px;
+}
+
+
+
+.region
+{
+	clear:both;
+	width:100%;
+}
+
+.region h2
+{
+	color:#eee;
+}
+
+.assetContentIndex li
+{
+	list-style-type:square !important;
+	margin-left:30px !important;
+	padding-bottom:15px;
+}

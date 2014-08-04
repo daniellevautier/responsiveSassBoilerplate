@@ -1,0 +1,243 @@
+   body 
+    { 
+    	font-family: Tahoma, Verdana, sans-serif;
+    	color:#7b7c7c;
+    	background-color:#fff;
+    	text-align:center;	
+    }
+    
+       
+    #wrapper-frame
+    {
+		width:986px;
+    	margin: 0 auto;
+		text-align:left;
+    }
+    
+      #wrapper-header
+    {
+    	height:149px;
+    	border-bottom:1px dotted #4e4442;
+		background:url(/images/global/order_now_header.gif) no-repeat;	
+    }
+    
+    #wrapper-header.blue-monday
+	{
+		background: url(/images/global/order_now_header_blue_monday.gif) no-repeat;
+	}
+	
+	#wrapper-header.valentines-day
+	{
+		background: url(/images/global/order_now_header_valentines_day.gif) no-repeat;
+	}
+	
+	#wrapper-header.spring
+	{
+	background: url(/images/global/order_now_header_spring.gif) no-repeat;
+	}
+   
+    #wrapper-logo
+    {
+    	float:left; 
+    	height:125px;
+    	width:250px;
+    }
+    
+    #wrapper-logo a
+    {
+    	display:block;
+    	width:100%;
+    	height:102px;
+    	abackground:url(/images/global/lg_sas.gif) no-repeat;
+    }
+    
+    #wrapper-logo a span
+    {
+    	display:none;
+    }
+    
+	
+	   #wrapper-header-right
+    {
+    	float:right;
+		padding-top:10px;
+		margin-right:262px;
+    	height:100px; 
+		border:0px solid #ff0000;
+    }
+	
+	.header-phone
+	
+	 {
+   		text-align:right;
+    }
+	
+	.header-basket
+	
+	 {
+		 text-align:right;
+    }
+	
+	
+		.header-phone span
+	
+	 {
+    	color:#a80d02;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:162%;    		
+    }
+	
+    
+    #navigation
+	{
+	
+		clear:both;
+		float:left;
+		font-size:85%;		
+		width:100%;
+	}
+	
+	#wrapper-content
+    {
+    	width:975px;
+    	background-color:#ffffff; 
+    	clear:both;	
+    }
+
+       
+    #wrapper-content-left
+    {
+    	float:left;
+    	width:720px;
+    	padding-top:10px;
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	    #wrapper-content-left a
+    {
+		text-decoration:none;
+    }
+	
+	    #wrapper-content-left a:hover
+    {
+		text-decoration:none;
+	color:#a80d02;
+    }
+	
+	
+	
+	
+    
+    #wrapper-content-left img
+    {
+    	border-top:4px solid #fff;
+    	border-left:0px solid #fff;
+    	border-bottom:4px solid #fff;
+    }   
+    
+   #wrapper-content-left.noborder img
+    {
+    	border:0px !important;
+    } 
+    
+    
+    #wrapper-content-right
+    {
+    	float:right;
+    	width:245px;
+    	padding-top:5px;
+		border:0px solid #ff0000;	
+    	
+    }
+	
+	
+	 #wrapper-content-right .navright-12857
+   {
+ 	background:url(/images/global/free_fabric_swatch.gif) no-repeat;
+	background-position: right;
+
+	background-color:#f3f1ed;
+   }
+    
+    
+    
+    #search
+    {
+    	
+    	float:right;
+    }    
+ 
+    
+    #footer
+    {
+    	clear:both; 
+    	padding-top:50px;
+    	border-bottom:2px solid #4f4541;	
+    }
+    
+    #wrapper-content-left .btn img
+	{
+		border:0;
+	}
+	
+	    #instore-head
+    {
+    	float:right; 
+    	height:80px;
+    	width:250px;
+		border:0px solid #ff0000;
+		
+    }
+    
+    #instore-head a
+    {
+    	display:block;
+    	width:100%;
+    	height:80px;
+    }
+    
+    #instore-head a span
+    {
+    	display:none;
+    }
+    
+
+    
+
+    
+      
+	    #wrapper-promo
+    {
+    	float:left; 
+    	height:125px;
+    	width:100px;
+    }
+    
+    #wrapper-promo a
+    {
+    	display:block;
+    	width:100%;
+    	height:102px;
+    }
+    
+    #wrapper-promo a span
+    {
+    	display:none;
+    }
+
+    
+    
+    
+    
+    
+        
+  
+
+	
+	

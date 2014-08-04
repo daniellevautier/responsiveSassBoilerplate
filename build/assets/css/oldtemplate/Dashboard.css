@@ -1,0 +1,81 @@
+﻿
+body
+{
+	
+}
+
+h2
+{
+	font-family:Georgia,  Arial;
+	font-size:160%;
+}
+
+h3
+{
+	font-family:Georgia,  Arial;
+	font-size:120%;
+	padding:20px 0 20px 0;
+}
+
+.wrapper-header
+{
+	padding:4px;
+	border-bottom:1px dotted #ccc;
+}
+
+.wrapper-content
+{
+	padding:4px;
+	border-bottom:1px dotted #ccc;
+}
+
+.wrapper-search
+{
+	padding:4px;
+	border-bottom:1px dotted #ccc;
+}
+
+.wrapper-content td
+{
+	padding:4px;
+}
+
+.row-alt td
+{
+	background-color:#d1e4fb;
+}
+
+.list-covers
+{
+	border-top:1px solid #000;
+	padding-left:20px;
+}
+
+.list-colour
+{
+	border-top:1px solid #000;
+	padding-left:20px;
+}
+
+.list-productsize
+{
+	border-top:1px solid #000;
+	padding-left:20px;
+}
+
+.list-productfabric
+{
+	border-top:1px solid #000;
+	padding-left:20px;
+	
+	
+}
+
+.list-productcolour
+{
+	border-top:1px solid #000;
+	padding-left:20px;
+	clear:both;
+	
+}
+

@@ -1,0 +1,179 @@
+.order-checkout table
+{
+	width:100%;
+}
+
+.order-checkout th
+{
+	border:1px solid #fff;
+	padding:4px 10px 4px 10px;
+}
+
+.order-checkout td
+{
+	border-right:1px solid #fff;
+	border-bottom:1px solid #ccc;
+	padding:4px 10px 4px 10px;
+}
+
+.order-checkout .row_delivery td
+{
+	border-right:0px solid #fff;
+	border-bottom:0px solid #ccc;
+}
+
+.order-checkout .row_delivery td label
+{
+	padding-left:5px;
+}
+
+.order-checkout th
+{
+	background-color:#f1f2f2;
+	font-weight:bold;
+	border:2px solid #fff;
+}
+
+.order-checkout td.order-description
+{
+	font-weight:normal;
+
+}
+
+
+.order-checkout td.order-qty,
+.order-checkout td.order-price,
+.order-checkout td.order-total
+{
+	background-color:#e3e4e3;
+	font-style:italic;
+	font-weight:bold;
+}
+
+.order-checkout td.order-final
+{
+	background-color:#e3e4e3;
+	text-align:right;
+	padding-top:15px;
+	
+}
+
+
+.order-checkout td p.order-finaltotal
+{
+	font-style:italic;
+	font-size:138.5%;
+	font-family: Georgia,Tahoma,Verdana,sans-serif;
+	line-height:22px;
+	padding-bottom:0px;
+}
+
+.order-checkout td p.order-delivery
+{
+	padding-top:5px;
+	font-size:77%;
+	line-height:13px;	
+}
+
+.order-checkout tr.noborder td
+{
+    border:0px solid #fff !important;
+}
+
+.order-checkout tr.order-checkout-pay td
+{
+	border-bottom:0px solid #fff !important;
+	padding:20px 0 0 0;
+}
+
+#wrapper-billAddress table	
+{
+	width:550px;
+}
+
+#wrapper-billAddress table td	
+{
+	padding:5px;
+}
+
+#wrapper-billAddress label	
+{
+	width:100px;
+}
+
+#wrapper-billAddress .input
+{
+	width:200px;
+}
+
+#wrapper-billAddress select
+{
+	width:150px;
+}
+
+#wrapper-billAddress p
+{
+	/*width:400px;*/
+}
+
+
+
+.form-error-message
+{
+	color:Red;
+	clear:both !important;
+	padding-top:4px;
+	padding-bottom:5px;
+	font-size:11px;
+}
+
+.form-error-hint
+{
+	clear:both !important;
+	padding-bottom:10px;
+	font-size:11px;
+}
+
+.order-table
+{
+	width:100%;
+	margin-top:20px;
+}
+
+.order-table a
+{
+	color:Red;
+}
+
+.order-table tr td
+{
+	border-bottom:1px dashed #ccc;
+	height:20px;
+	padding:5px;
+	color:#999;
+}
+
+.order-table tr.current td
+{
+	color:#333 !important;
+		
+}
+
+.order-table-edit
+{
+	width:400px;
+}
+
+
+.order-table-edit tr td
+{
+	border-bottom:1px dashed #ccc;
+	height:20px;
+	padding:5px;
+	color:#999;
+}
+
+
+
+
+

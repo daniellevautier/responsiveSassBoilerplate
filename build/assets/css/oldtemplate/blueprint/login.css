@@ -1,0 +1,24 @@
+﻿#wrapper-login 
+{
+	margin-bottom:20px;
+}
+
+#wrapper-login table	
+{
+	width:550px;
+}
+
+#wrapper-login table td	
+{
+	padding:5px;
+}
+
+#wrapper-login label	
+{
+	width:100px;
+}
+
+#wrapper-login .input
+{
+	width:200px;
+}

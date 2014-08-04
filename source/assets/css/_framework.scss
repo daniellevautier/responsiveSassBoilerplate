@@ -1,0 +1,131 @@
+/*Framwork CSS*/
+
+/*Structure*/
+.wrapper-100, .wrapper-33, .wrapper-50, .wrapper-25, .wrapper-66, .wrapper-75, .quarter {
+    width:100%;
+    float:left;
+}
+
+@include viewport(660) {
+	.wrapper-33 {
+	width:33.3%;
+	}
+
+	.wrapper-66 {
+		width:66.6%;
+
+		&.with-margin {
+			margin-left:3%;
+			width:63.6%;
+		}
+	}
+
+	.wrapper-33.with-margin {
+	margin-left:3%;
+	width:31.3%;
+
+		&:first-child {
+		margin-left:0;
+		}
+	}
+}
+
+.wrapper-33 .article h1, .wrapper-33 .promo-block h1 {
+	font-size:18px;
+
+	@include viewport(768) {
+	font-size:20px;
+	}
+
+	@include viewport(1080) {
+	font-size:22px;
+	}
+}
+
+.wrapper-33 .promo-block p {
+	font-size:16px;
+
+	@include viewport(660) {
+	font-size:14px;
+	}
+}
+
+@include viewport(600) {
+	.wrapper-50 {
+	width:50%;
+	float:left;
+	}
+
+	.wrapper-50.with-margin {
+    margin-left: 3%;
+    width:48.5%;
+    }
+
+    .wrapper-50.with-margin:first-child {
+      margin-left:0;
+    }
+}
+
+ .wrapper-50 .article h1, .wrapper-50 .promo-block h1 {
+	font-size:20px;
+
+	@include viewport(768) {
+	font-size:24px;
+	}
+
+	@include viewport(1080) {
+	font-size:26px;
+	}
+}
+
+.wrapper-25 {
+	@include viewport(600) {
+		width:50%;
+    }
+	@include viewport(768) {
+		width:25%;
+    }
+}
+
+
+.wrapper-25.small-wrapper {
+	width:50%;
+
+	@include viewport(600) {
+	width:25%;
+	}
+}
+
+@include viewport(768) {
+	.wrapper-75 {
+		width:73%;
+		margin-right:2%;
+	}
+
+}
+
+/*Spacings*/
+.margin-bottom {
+	margin-bottom:16px!important;
+} 
+
+.margin-bottom-small {
+	margin-bottom:10px;
+} 
+
+.margin-top {
+	margin-top:16px;
+}
+
+.margin-top-small {
+	margin-top:10px;
+}
+.no-margin {
+	margin-top:0!important;
+	margin-bottom:0!important;
+}
+
+.no-padding {
+	padding-top:0!important;
+	padding-bottom:0!important;
+}

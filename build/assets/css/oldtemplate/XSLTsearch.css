@@ -1,0 +1,25 @@
+#xsltsearch {margin: 0; padding-bottom: 20px;}
+#xsltsearch_navigation {text-align: center;}
+#xsltsearch_navigation .disabled {color: #AAA;}
+#xsltsearch_stats {font-size: 75%; color: #999;}
+#xsltsearch_results {padding-bottom: 20px;}
+#xsltsearch h2 {font-size: 150%;}
+.xsltsearch_result p {margin: 0; padding: 0;}
+.xsltsearch_result:hover {background: #fafafa;}
+.xsltsearch_ordinal {font-weight: bold; font-size: 75%;}
+.xsltsearch_title {font-weight: bold;}
+.xsltsearch_score {font-size: 75%;}
+p.xsltsearch_result_description {padding-bottom: 10px;}
+.xsltsearch_description strong {background: #FFD;} /* highlighting */
+
+
+
+
+
+
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */

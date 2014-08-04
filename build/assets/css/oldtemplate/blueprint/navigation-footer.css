@@ -1,0 +1,47 @@
+﻿.nav-footer-section
+{
+	width:160px;
+	float:left;
+	padding-top:15px;
+	margin-bottom:20px;
+		border:0px solid #ff0000;	
+	
+}
+
+.nav-footer-section p
+{
+	font-weight:bold;
+	padding-bottom:10px;
+	font-size:81%;
+	
+}
+
+.nav-footer-section li
+{
+	height:15px;
+	font-size:77%;
+}
+
+.footer-right
+{
+	width:220px;
+	text-align:left;
+	padding-top:10px;
+	margin-bottom:15px;
+	float:left;
+	border:0px solid #ff0000;	
+		
+	
+}
+
+.footer-barclays
+{
+	width:240px;
+	text-align:left;
+	padding-top:15px;
+	margin-bottom:15px;
+	float:right;
+	border:0px solid #ff0000;	
+		
+	
+}

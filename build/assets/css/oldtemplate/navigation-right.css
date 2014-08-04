@@ -1,0 +1,345 @@
+/*#wrapper-content-right #wrapper-content-right-home li
+{
+	background-color:#ffffff;
+	border:1px solid #cecece; 
+	width:241px;
+	height:57px;
+	padding-left:10px;
+	margin-bottom:10px;
+}*/
+
+#wrapper-content-right-home li
+{
+	background-color:#ffffff;
+	text-align:center;
+	border:1px solid #cecece; 
+	width:231px;
+	height:57px;
+	padding:10px;
+	margin-bottom:13px;
+}
+
+
+
+
+#wrapper-content-right li.navright-0000
+{
+	background-color:#ffffff;
+	border:0px solid #cecece; 
+	width:253px;
+	height:228px;
+	padding:0px;
+	margin-bottom:13px;
+}
+
+
+#wrapper-content-right li.nav-top10
+{
+	background:url(/images/global/top10.png) no-repeat;	
+}
+
+#wrapper-content-right li.navright-28816
+{
+	abackground:url(/images/global/newsletter.png) no-repeat;	
+}
+
+
+#wrapper-content-right li.navright-33693
+{
+	abackground:url(../images/global/navigation_rhs_newlabel.jpg) no-repeat;	
+	height:64px;
+}
+
+
+#wrapper-content-right ul li.navright-33693 a {
+  display: block;
+    padding: 0px 0px 0px 0px;
+text-decoration: none;
+}
+
+
+#wrapper-content-right li.navright-34361
+{
+	background:url(../images/global/navigation_rhs_britain.jpg) no-repeat;	
+	height:80px;
+}
+
+
+#wrapper-content-right li.navright-34279
+{
+	height:190px;
+	background:url(../images/blog/decorex-finalist.jpg) no-repeat;	
+}
+
+
+#wrapper-content-right li.navright-99933
+{
+	abackground:url(../images/global/quote-box.gif) no-repeat;	
+	height:181px;
+	 padding: 0px 0px 0px 0px;
+	border:none;
+}
+
+#wrapper-content-right li.navright-40923
+{
+	abackground:url(../images/global/navigation_rhs_mongol.jpg) no-repeat;	
+	height:180px;
+}
+
+
+#wrapper-content-right li.navright-22273
+{
+	background:url(../images/global/navigation_rhs_bolivian.jpg) no-repeat;	
+	height:90px;
+	
+}
+
+
+
+#wrapper-content-right li.navright-51222
+{
+	background:url(../images/global/navigation_rhs_bolivian.jpg) no-repeat;	
+	height:90px;
+	
+}
+
+#wrapper-content-right li.navright-12857
+{
+	background:url(../images/global/navigation_rhs_fabric.jpg) no-repeat;	
+	height:80px;
+	
+}
+
+
+
+
+
+
+#wrapper-content-right-special li.navright-12857
+{
+	background:url(../images/global/navigation_rhs_fabric.jpg) no-repeat;	
+	height:80px;
+	background-color:#ffffff;
+	border:1px solid #cecece; 
+	width:241px;
+	padding-left:10px;
+	margin-top:5px;
+	margin-bottom:0px;
+	
+}
+
+#wrapper-content-right-special li.navright-34361
+{
+	background:url(../images/global/navigation_rhs_britain.jpg) no-repeat;	
+	height:80px;
+	background-color:#ffffff;
+	border:1px solid #cecece; 
+	width:241px;
+	padding-left:10px;
+	margin-top:5px;
+	margin-bottom:0px;
+	
+}
+
+
+
+
+#wrapper-content-right li.navright-22275 a {
+  display: block;
+    padding: 0px 0px 0px 0px;
+text-decoration: none;
+}
+
+
+
+#wrapper-content-right li.navright-16372
+{
+	height:80px;
+}
+
+#wrapper-content-right li.navright-37225
+{
+	height:75px;
+}
+
+#wrapper-content-right li.navright-69338
+{
+	height:140px;
+	
+}
+
+#wrapper-content-right li.navright-34997
+{
+	background:url(../images/global/navigation_rhs_newlabel.jpg) no-repeat;	
+	height:64px;
+	
+}
+
+
+#wrapper-content-right li.navright-69338 a
+{
+	color:#928167;
+	text-decoration:underline;
+	
+}
+
+#wrapper-content-right li.navright-69338 a:hover
+{
+	color:#a80d02;
+	text-decoration:underline;
+}
+
+#wrapper-content-right li h4
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	color:#4c4847;
+	padding:7px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+#wrapper-content-right-home li h4
+{
+	
+}
+
+#wrapper-content-right-home li h4 a, #wrapper-content-right li.navright-home-barns h4 a, #wrapper-content-right li.navright-home-special-size h4 a, #wrapper-content-right li.navright-home-lifetime h4 a, #wrapper-content-right li.navright-home-notonthehighst h4 a, #wrapper-content-right li.navright-home-fabrics h4 a, #wrapper-content-right-special li.navright-home-fabrics h4 a, #wrapper-content-right-special li.navright-home-lifetime h4 a
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	line-height:20px;
+	font-weight:normal;
+	text-transform:uppercase;
+	font-style:normal;
+	color:#4c4847;
+	padding:7px 0px 1px 0px;
+	margin:0px 0px 0px 0px;
+	border-bottom:1px solid #e1dfdf;
+}
+
+
+
+#wrapper-content-right li h4 a
+{
+	color:#4c4847;
+}
+
+#wrapper-content-right li p
+{
+padding:0px 0px 0 0px !important;
+font-family:Georgia, "Times New Roman", Times, serif;
+	margin: 0em;
+	color:#707070;
+}
+
+#content-right-special
+{
+	abackground-color:#f3f1ed;
+	border-left:0px dotted #4e4442; 
+	border-bottom:1px dotted #4e4442;
+	width:100%;
+	padding-left:10px;
+	/*background:url(/images/global/order_now_header.gif) no-repeat;*/	
+}
+
+.rhshigh
+{
+padding:0px 0px 20px 0px !important;
+}
+
+
+.wrapper-product-britain
+{
+	clear:both;
+	float:left;
+	background:url(/images/global/bg_madeinbritain.png) center right no-repeat;
+	text-align:left;
+	width:235px;
+	padding:0 0 0 16px;
+		border:1px solid #cecece; 
+	margin:10px 0 10px 0px;
+	height:80px;
+	
+}
+
+.wrapper-product-britain h2
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:16px;
+	color:#4c4847;
+	padding:7px 0px 0px 0px;
+	margin:0px 0px 0px 0px;
+}
+
+.wrapper-product-britain p
+{
+	padding:0px 0px 0 0px !important;
+	float: left;
+	margin: 0em;
+	color:#928167;
+}
+
+/* new */
+
+
+#wrapper-content-right li.navright-home-fabrics
+{
+	height:205px;
+	margin-top:5px;
+	
+}
+
+
+#wrapper-content-right-special li.navright-home-fabrics
+{
+	height:225px;
+	margin-top:5px;
+	border:1px solid #cecece; 
+	text-align:center;
+	padding:0;
+	margin-bottom:10px;
+	
+}
+
+#wrapper-content-right li.navright-home-lifetime
+{
+	height:255px;
+	
+}
+
+#wrapper-content-right-special li.navright-home-lifetime
+{
+	height:255px;
+	
+}
+
+#wrapper-content-right li.navright-home-barns {
+  height: auto;
+  padding: 0 0 10px;
+  text-align: center;
+  width: 250px;
+}
+
+
+
+#wrapper-content-right li.navright-home-barns a, #wrapper-content-right li.navright-home-notonthehighst a, #wrapper-content-right li.navright-home-special-size a, #wrapper-content-right li.navright-home-lifetime a, #wrapper-content-right li.navright-home-fabrics a, #wrapper-content-right-special li.navright-home-fabrics a, #wrapper-content-right-special li.navright-home-lifetime a
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-style:italic;
+	font-weight:bold;
+	font-size:12px;
+	border-bottom:1px dotted #4e4442;
+	
+	
+}
+#wrapper-content-right li.navright-home-notonthehighst
+{
+	height:156px;
+	
+}
+
+#wrapper-content-right li.navright-home-special-size
+{
+	height:190px;
+	
+}

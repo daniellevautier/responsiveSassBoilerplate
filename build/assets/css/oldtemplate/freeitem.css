@@ -1,0 +1,3 @@
+﻿.order-checkout  #freeitem {}
+.order-checkout  #freeitem .choose{width:200px;}
+.order-checkout  #freeitem td{padding:0; border-bottom:1px solid #fff !important;}

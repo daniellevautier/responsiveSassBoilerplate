@@ -1,0 +1,75 @@
+﻿.wrapper-people
+{
+	clear:both;
+	padding:16px 50px 16px 50px;
+}
+
+.wrapper-people .name
+{
+	font-size:93%;
+	color:#fff;
+	float:left;
+	font-weight:bold;
+}
+
+.wrapper-people .job
+{
+	float:left;
+	color:#cebdb5;
+}
+
+.wrapper-people .profile
+{
+	float:right;
+}
+
+.contact-details
+{
+	color:#fff;
+	padding-top:20px;
+}
+
+.contact-details a
+{
+	text-decoration:none;
+	color:#fff;
+}
+
+
+
+.wrapper-people-teams a
+{
+	color:#fff;
+}
+
+.wrapper-people-left
+{
+	float:left;
+	width:400px;
+	color:#fff;
+}
+
+.wrapper-people-left .job
+{
+	color:#cebdb5;
+}
+
+.wrapper-people-right
+{
+	float:right;
+	width:90px;
+}
+
+.wrapper-people-teams .wrapper-people-right .profile
+{
+	float:none;
+}
+
+.wrapper-people-teams
+{
+	clear:both;
+	padding:16px 50px 8px 50px;
+	border-bottom:1px solid #575654;
+}
+
+
