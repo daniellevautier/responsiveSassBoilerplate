@@ -1,131 +1,173 @@
 /*Framwork CSS*/
+@import 'variables';
 
-/*Structure*/
-.wrapper-100, .wrapper-33, .wrapper-50, .wrapper-25, .wrapper-66, .wrapper-75, .quarter {
-    width:100%;
-    float:left;
+/*Wrapper*/
+.container {
+  max-width:$desktop;
+  margin:0 auto;
 }
 
-@include viewport(660) {
-	.wrapper-33 {
-	width:33.3%;
-	}
+/*Structure*/
+.wrapper-100, .wrapper-33, .wrapper-50, .wrapper-25, .wrapper-75, .wrapper-66 {
+    width:100%;
+    float:left;
+    margin-bottom:$setSpacing;
+}
 
-	.wrapper-66 {
-		width:66.6%;
+@include viewport(600) {
+	.wrapper-50 {
+		margin-left: 1%;
+	    width:49.5%;
 
-		&.with-margin {
-			margin-left:3%;
-			width:63.6%;
+
+	    &:first-child {
+	      margin-left:0;
+	    }
+
+	   	&.no-margin {
+		width:50%;
+		margin-left:0;
 		}
 	}
 
-	.wrapper-33.with-margin {
-	margin-left:3%;
-	width:31.3%;
+	.wrapper-25 {
+		margin-left: 0%;
+	    width:49.5%;
 
-		&:first-child {
+
+	    &:nth-child(2n) {
+	      margin-left:1%;
+	    }
+
+	   	&.no-margin {
+		width:50%;
 		margin-left:0;
 		}
 	}
 }
 
-.wrapper-33 .article h1, .wrapper-33 .promo-block h1 {
-	font-size:18px;
 
-	@include viewport(768) {
-	font-size:20px;
+@include viewport(660) {
+	.wrapper-33 {
+		margin-left: 1%;
+	    width:32.66%;
+
+	    &:first-child {
+	      margin-left:0;
+	    }
+
+	   	&.no-margin {
+		width:33.3%;
+		margin-left:0;
+		}
+
+		.padded-content {
+			padding:4%;
+			width:92%;
+		}
 	}
 
-	@include viewport(1080) {
-	font-size:22px;
-	}
-}
+	.wrapper-66 {
+		width:65.33%;
+		margin-left:2%;
 
-.wrapper-33 .promo-block p {
-	font-size:16px;
-
-	@include viewport(660) {
-	font-size:14px;
-	}
-}
-
-@include viewport(600) {
-	.wrapper-50 {
-	width:50%;
-	float:left;
-	}
-
-	.wrapper-50.with-margin {
-    margin-left: 3%;
-    width:48.5%;
-    }
-
-    .wrapper-50.with-margin:first-child {
-      margin-left:0;
-    }
-}
-
- .wrapper-50 .article h1, .wrapper-50 .promo-block h1 {
-	font-size:20px;
-
-	@include viewport(768) {
-	font-size:24px;
-	}
-
-	@include viewport(1080) {
-	font-size:26px;
-	}
-}
-
-.wrapper-25 {
-	@include viewport(600) {
-		width:50%;
-    }
-	@include viewport(768) {
-		width:25%;
-    }
-}
-
-
-.wrapper-25.small-wrapper {
-	width:50%;
-
-	@include viewport(600) {
-	width:25%;
+		&.no-margin {
+		width:66%;
+		margin-left:0;
+		}
 	}
 }
 
 @include viewport(768) {
-	.wrapper-75 {
-		width:73%;
-		margin-right:2%;
+	.wrapper-25 {
+		margin-left: 1%;
+	    width:24.25%;
+
+	    &:first-child {
+	      margin-left:0;
+	    }
+
+	   	&.no-margin {
+		width:25%;
+		margin-left:0;
+		}
 	}
 
+	.wrapper-75 {
+		width:74.75%;
+		margin-left:1%;
+
+		&.no-margin {
+		width:75%;
+		margin-left:0;
+		}
+	}
+}
+
+.padded-content {
+	padding:4%;
+	float:left;
+	@include box-sizing();
+
+	@include viewport(660) {
+		padding:3%;
+		width:94%;
+	}
+
+	@include viewport(768) {
+		padding:2%;
+		width:96%;
+	}
+
+	@include viewport($desktop) {
+		padding:0;
+		width:100%;
+	}
+}
+
+
+.padded-content-horizontal {
+	padding:0 4%;
+	float:left;
+	width:92%;
+
+	@include viewport(660) {
+		padding:0 3%;
+		width:96%;
+	}
+
+	@include viewport(768) {
+		padding:0 2%;
+		width:96%;
+	}
+
+	@include viewport($desktop) {
+		padding:0;
+		width:100%;
+	}
 }
 
 /*Spacings*/
 .margin-bottom {
-	margin-bottom:16px!important;
+	margin-bottom:$setSpacing!important;
 } 
 
-.margin-bottom-small {
-	margin-bottom:10px;
-} 
-
-.margin-top {
-	margin-top:16px;
+.double-margin-bottom {
+	margin-bottom:$setSpacing * 2 !important;
 }
 
-.margin-top-small {
-	margin-top:10px;
-}
-.no-margin {
-	margin-top:0!important;
+.no-margin-bottom {
 	margin-bottom:0!important;
 }
 
-.no-padding {
-	padding-top:0!important;
-	padding-bottom:0!important;
-}
+.margin-top {
+	margin-top:$setSpacing!important;
+} 
+
+.double-margin-top {
+	margin-top:$setSpacing * 2 !important;
+} 
+
+.no-margin-top {
+	margin-top:$0!important;
+} 

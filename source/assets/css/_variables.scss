@@ -31,7 +31,7 @@
   box-sizing:border-box;
 }
 
-$desktop: 960;
+$desktop: 960; /*Set container and desktop variable for media queries*/
 
 /*Fonts*/
 $primaryFont: Georgia, Times, sans-serif;
@@ -46,4 +46,13 @@ $red:#A80D02;
 .primary-font {font-family:$primaryFont!important;}
 .secondary-font {font-family:$secondaryFont!important;}
 
-/*@font-face {font-family: 'IntroLight';src: url('../fonts/2AEC8A_0_0.eot');src: url('../fonts/2AEC8A_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2AEC8A_0_0.woff') format('woff'),url('../fonts/2AEC8A_0_0.ttf') format('truetype');} */
+// @font-face {
+//     font-family: 'fontname';
+//     src: url('../fonts/fontname-webfont.eot');
+//     src: url('../fonts/fontname-webfont.eot?#iefix') format('embedded-opentype'),
+//          url('../fonts/fontname-webfont.woff') format('woff'),
+//          url('../fonts/fontname-webfont.ttf') format('truetype'),
+//          url('../fonts/fontname-webfont.svg#akzidenz-grotesk_stdbold') format('svg');
+//     font-weight: normal;
+//     font-style: normal;
+// }
