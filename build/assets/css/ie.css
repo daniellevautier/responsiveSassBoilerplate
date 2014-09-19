@@ -1,106 +1,331 @@
-/*
-Syntax error: Invalid CSS after "	margin-top:": expected expression (e.g. 1px, bold), was "$0!important;"
-        on line 172 of D:/_development/responsiveSassBP/source/assets/css/_framework.scss
-        from line 7 of D:/_development/responsiveSassBP/source/assets/css/ie.scss
+/*Main SASS Template*/
+/* RESET Based on Normalize / Eric Meyer's Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-167: .double-margin-top {
-168: 	margin-top:$setSpacing * 2 !important;
-169: } 
-170: 
-171: .no-margin-top {
-172: 	margin-top:$0!important;
-173: }
+html {
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch; }
 
-Backtrace:
-D:/_development/responsiveSassBP/source/assets/css/_framework.scss:172
-D:/_development/responsiveSassBP/source/assets/css/ie.scss:7
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:1149:in `expected'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/lexer.rb:206:in `expected!'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/parser.rb:478:in `assert_expr'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/script/parser.rb:49:in `parse'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:1022:in `sass_script'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:882:in `value!'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:859:in `declaration'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:582:in `block in declaration_or_ruleset'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:1123:in `rethrow'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:592:in `declaration_or_ruleset'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:554:in `block_child'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:543:in `block_contents'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:535:in `block'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:529:in `ruleset'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:553:in `block_child'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:546:in `block_contents'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:82:in `stylesheet'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/scss/parser.rb:27:in `parse'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:342:in `_to_tree'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:274:in `to_tree'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/renderers/sass.rb:66:in `evaluate'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/tilt-1.4.1/lib/tilt/template.rb:103:in `render'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/core_extensions/rendering.rb:280:in `render_individual_file'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/core_extensions/rendering.rb:157:in `render_template'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/sitemap/resource.rb:143:in `block in render'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/activesupport-3.2.18/lib/active_support/notifications.rb:125:in `instrument'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/util.rb:42:in `instrument'
-c:in `instrument'
-c:in `instrument'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/sitemap/resource.rb:114:in `render'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/core_extensions/request.rb:256:in `process_request'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/core_extensions/request.rb:206:in `block in call!'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/core_extensions/request.rb:205:in `catch'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/core_extensions/request.rb:205:in `call!'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/core_extensions/request.rb:191:in `call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/builder.rb:138:in `call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/urlmap.rb:65:in `block in call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/urlmap.rb:50:in `each'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/urlmap.rb:50:in `call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/head.rb:11:in `call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-1.5.2/lib/rack/builder.rb:138:in `call'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-test-0.6.2/lib/rack/mock_session.rb:30:in `request'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-test-0.6.2/lib/rack/test.rb:230:in `process_request'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/rack-test-0.6.2/lib/rack/test.rb:57:in `get'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/cli/build.rb:251:in `render_to_file'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/cli/build.rb:214:in `block in execute!'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/cli/build.rb:211:in `each'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/cli/build.rb:211:in `execute!'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/cli/build.rb:126:in `invoke!'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor/actions.rb:94:in `action'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/cli/build.rb:68:in `build'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor/command.rb:27:in `run'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/cli.rb:77:in `method_missing'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor/command.rb:29:in `run'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor/command.rb:126:in `run'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor/invocation.rb:126:in `invoke_command'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor.rb:359:in `dispatch'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/thor-0.19.1/lib/thor/base.rb:440:in `start'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/lib/middleman-core/cli.rb:22:in `start'
-c:/Ruby193/lib/ruby/gems/1.9.1/gems/middleman-core-3.2.2/bin/middleman:18:in `<top (required)>'
-c:/Ruby193/bin/middleman:23:in `load'
-c:/Ruby193/bin/middleman:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Invalid CSS after \"	margin-top:\": expected expression (e.g. 1px, bold), was \"$0!important;\"\A         on line 172 of D:/_development/responsiveSassBP/source/assets/css/_framework.scss\A         from line 7 of D:/_development/responsiveSassBP/source/assets/css/ie.scss\A \A 167: .double-margin-top {\A 168: 	margin-top:$setSpacing * 2 !important;\A 169: } \A 170: \A 171: .no-margin-top {\A 172: 	margin-top:$0!important;\A 173: }"; }
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+audio, canvas, progress, video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/* -------------------------- Typography CONTENT -------------------------- */
+hr {
+  height: 1px;
+  border: 0;
+  float: left;
+  width: 100%; }
+
+h1, h2, h3, h4, h5 {
+  text-rendering: optimizeLegibility; }
+
+code, kbd, pre, samp {
+  font-family: monospace, serif; }
+
+a, a:visited {
+  background: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+b,
+strong {
+  font-weight: bold; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+q {
+  quotes: none; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+dfn {
+  font-style: italic; }
+
+/* -------------------------- EMBEDED CONTENT -------------------------- */
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  -ms-interpolation-mode: bicubic; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+/* -------------------------------------------- TABLES --------------------------------------------- */
+table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: transparent; }
+
+/* --------------------------------------------- FORMS ---------------------------------------------- */
+fieldset {
+  border: 0;
+  padding: 0; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal; }
+
+button, input, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+input {
+  line-height: normal; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield; }
+
+input, select {
+  vertical-align: middle; }
+
+select[multiple],
+select[size] {
+  height: auto; }
+
+textarea {
+  resize: vertical;
+  overflow: auto;
+  height: auto;
+  vertical-align: top; }
+
+/* -------------------------------------------- Clearfix------------------------------------------ */
+.clearfix:before, .clearfix:after {
+  display: table;
+  content: ""; }
+
+.clearfix:after {
+  clear: both; }
+
+.hide {
+  display: none; }
+
+/*Set container and desktop variable for media queries*/
+/*Set global spacing*/
+/*Fonts*/
+/*Colours*/
+/*Universal Classes*/
+.primary-colour {
+  color: #a80d02; }
+
+.secondary-colour {
+  color: #a80d02; }
+
+.primary-font {
+  font-family: Georgia, Times, sans-serif !important; }
+
+.secondary-font {
+  font-family: Arial, sans-serif !important; }
+
+/*Framwork CSS*/
+/*Set container and desktop variable for media queries*/
+/*Set global spacing*/
+/*Fonts*/
+/*Colours*/
+/*Universal Classes*/
+.primary-colour {
+  color: #a80d02; }
+
+.secondary-colour {
+  color: #a80d02; }
+
+.primary-font {
+  font-family: Georgia, Times, sans-serif !important; }
+
+.secondary-font {
+  font-family: Arial, sans-serif !important; }
+
+/*Wrapper*/
+.container {
+  max-width: 960;
+  margin: 0 auto; }
+
+/*Structure*/
+.wrapper-100, .wrapper-33, .wrapper-50, .wrapper-25, .wrapper-75, .wrapper-66 {
+  width: 100%;
+  float: left;
+  margin-bottom: 12px; }
+
+.wrapper-50 {
+  margin-left: 1%;
+  width: 49.5%; }
+  .wrapper-50:first-child {
+    margin-left: 0; }
+  .wrapper-50.no-margin {
+    width: 50%;
+    margin-left: 0; }
+
+.wrapper-25 {
+  margin-left: 0%;
+  width: 49.5%; }
+  .wrapper-25:nth-child(2n) {
+    margin-left: 1%; }
+  .wrapper-25.no-margin {
+    width: 50%;
+    margin-left: 0; }
+
+.wrapper-33 {
+  margin-left: 1%;
+  width: 32.66%; }
+  .wrapper-33:first-child {
+    margin-left: 0; }
+  .wrapper-33.no-margin {
+    width: 33.3%;
+    margin-left: 0; }
+  .wrapper-33 .padded-content {
+    padding: 4%;
+    width: 92%; }
+
+.wrapper-66 {
+  width: 65.33%;
+  margin-left: 2%; }
+  .wrapper-66.no-margin {
+    width: 66%;
+    margin-left: 0; }
+
+.wrapper-25 {
+  margin-left: 1%;
+  width: 24.25%; }
+  .wrapper-25:first-child {
+    margin-left: 0; }
+  .wrapper-25.no-margin {
+    width: 25%;
+    margin-left: 0; }
+
+.wrapper-75 {
+  width: 74.75%;
+  margin-left: 1%; }
+  .wrapper-75.no-margin {
+    width: 75%;
+    margin-left: 0; }
+
+.padded-content {
+  padding: 4%;
+  float: left;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 3%;
+  width: 94%;
+  padding: 2%;
+  width: 96%;
+  padding: 0;
+  width: 100%; }
+
+.padded-content-horizontal {
+  padding: 0 4%;
+  float: left;
+  width: 92%;
+  padding: 0 3%;
+  width: 96%;
+  padding: 0 2%;
+  width: 96%;
+  padding: 0;
+  width: 100%; }
+
+/*Spacings*/
+.margin-bottom {
+  margin-bottom: 12px !important; }
+
+.double-margin-bottom {
+  margin-bottom: 24px !important; }
+
+.no-margin-bottom {
+  margin-bottom: 0 !important; }
+
+.margin-top {
+  margin-top: 12px !important; }
+
+.double-margin-top {
+  margin-top: 24px !important; }
+
+.no-margin-top {
+  margin-top: 0 !important; }
+
+/*Main CSS*/
+hr {
+  height: 1px;
+  border: 0;
+  float: left;
+  width: 100%; }
+
+/*IE Specific Styles*/
