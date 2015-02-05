@@ -8,3 +8,55 @@ $mediaQueries:  false;
 @import 'css';
 
 /*IE Specific Styles*/
+.container {
+	width:$desktop;
+}
+
+.with-equal-height {
+	overflow:hidden;
+	margin-bottom:$setSpacing;
+}
+
+.with-equal-height > div {
+	padding-bottom:100%;
+	margin-bottom:-100%;
+}
+
+
+
+/*Framework Fixes for < IE7*/
+.lt-ie8 {
+	.wrapper-100, .wrapper-container {
+		overflow:hidden;
+	}
+
+	.wrapper-25 {
+		margin-right: -1px;	
+
+		&:first-child {
+			margin-right:0;
+		}
+	}
+	.wrapper-50 {
+		margin-right: -1px;
+	}
+
+	.wrapper-33 {
+		margin-right: -1px;
+		&:first-child {
+			margin-right:0;
+		}
+	}
+
+	.wrapper-66 {
+		margin-right: -1px;
+	}
+
+	.wrapper-75 {
+		margin-right: -3px;
+	}
+
+	.wrapper-container  {
+		margin-bottom: $setSpacing;
+	}
+}

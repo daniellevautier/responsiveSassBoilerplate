@@ -215,8 +215,9 @@ textarea {
 
 /*Wrapper*/
 .container {
-  max-width: 960;
-  margin: 0 auto; }
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%; }
 
 /*Structure*/
 .wrapper-100, .wrapper-33, .wrapper-50, .wrapper-25, .wrapper-75, .wrapper-66 {
@@ -224,95 +225,169 @@ textarea {
   float: left;
   margin-bottom: 12px; }
 
+.wrapper-50 {
+  background: #00aeae; }
+
+.wrapper-25 {
+  background: #33d0d2; }
+
+.wrapper-33 {
+  background: #348cb5; }
+
+.wrapper-66 {
+  background: #039ae1; }
+
+.wrapper-75 {
+  background: #a1d3de; }
+
+.wrapper-container {
+  width: 100%;
+  float: left;
+  clear: left; }
+
+.with-equal-height {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;
+  /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
 @media only screen and (min-width: 600px) {
   .wrapper-50 {
-    margin-left: 1%;
-    width: 49.5%; }
-    .wrapper-50:first-child {
-      margin-left: 0; }
-    .wrapper-50.no-margin {
-      width: 50%;
-      margin-left: 0; }
+    width: 50%; }
+    .wrapper-50 .padded-content {
+      padding: 6%;
+      width: 88%; }
 
   .wrapper-25 {
+    width: 50%;
+    margin-left: 0; }
+    .wrapper-25 .padded-content {
+      padding: 6%;
+      width: 88%; }
+
+  .wrapper-75 + .wrapper-25, .wrapper-25.with-75-right {
+    width: 100%; }
+    .wrapper-75 + .wrapper-25 .padded-content, .wrapper-25.with-75-right .padded-content {
+      padding: 3%;
+      width: 94%; }
+
+  .with-margin .wrapper-50 {
+    margin-left: 1%;
+    width: 49.5%; }
+    .with-margin .wrapper-50:first-child {
+      margin-left: 0; }
+  .with-margin .wrapper-25 {
     margin-left: 0%;
     width: 49.5%; }
-    .wrapper-25:nth-child(2n) {
+    .with-margin .wrapper-25:nth-child(2n) {
       margin-left: 1%; }
-    .wrapper-25.no-margin {
-      width: 50%;
-      margin-left: 0; } }
+  .with-margin .wrapper-75 + .wrapper-25, .with-margin .wrapper-25.with-75-right {
+    margin-left: 0;
+    width: 100%; } }
 @media only screen and (min-width: 660px) {
+  .wrapper-66 {
+    width: 66.66%; }
+    .wrapper-66 .padded-content {
+      padding: 5%;
+      width: 90%; }
+
   .wrapper-33 {
+    width: 33.33%; }
+    .wrapper-33 .padded-content {
+      padding: 9%;
+      width: 82%; }
+
+  .with-margin .wrapper-33 {
     margin-left: 1%;
     width: 32.66%; }
-    .wrapper-33:first-child {
+    .with-margin .wrapper-33:first-child {
       margin-left: 0; }
-    .wrapper-33.no-margin {
-      width: 33.3%;
-      margin-left: 0; }
-    .wrapper-33 .padded-content {
-      padding: 4%;
-      width: 92%; }
-
-  .wrapper-66 {
-    width: 65.33%;
-    margin-left: 2%; }
-    .wrapper-66.no-margin {
-      width: 66%;
+  .with-margin .wrapper-66 + .wrapper-33 {
+    margin-left: 1%; }
+  .with-margin .wrapper-66 {
+    width: 66.33%;
+    margin-left: 1%; }
+    .with-margin .wrapper-66:first-child {
       margin-left: 0; } }
 @media only screen and (min-width: 768px) {
   .wrapper-25 {
-    margin-left: 1%;
-    width: 24.25%; }
-    .wrapper-25:first-child {
-      margin-left: 0; }
-    .wrapper-25.no-margin {
-      width: 25%;
-      margin-left: 0; }
+    width: 25%; }
+    .wrapper-25 .padded-content {
+      padding: 8%;
+      width: 84%; }
+
+  .wrapper-50 .padded-content {
+    padding: 4%;
+    width: 92%; }
+
+  .wrapper-33 .padded-content {
+    padding: 6%;
+    width: 88%; }
+
+  .wrapper-66 .padded-content {
+    padding: 3%;
+    width: 94%; }
 
   .wrapper-75 {
+    width: 75%; }
+    .wrapper-75 .padded-content {
+      padding: 2.66%;
+      width: 94.33%; }
+
+  .wrapper-75 + .wrapper-25, .wrapper-25.with-75-right {
+    width: 25%; }
+    .wrapper-75 + .wrapper-25 .padded-content, .wrapper-25.with-75-right .padded-content {
+      padding: 8%;
+      width: 84%; }
+
+  .with-margin .wrapper-25, .with-margin .wrapper-75 + .wrapper-25, .with-margin .wrapper-25.with-75-right {
+    margin-left: 1%;
+    width: 24.25%; }
+    .with-margin .wrapper-25:first-child, .with-margin .wrapper-75 + .wrapper-25:first-child, .with-margin .wrapper-25.with-75-right:first-child {
+      margin-left: 0; }
+  .with-margin .wrapper-75 {
     width: 74.75%;
     margin-left: 1%; }
-    .wrapper-75.no-margin {
-      width: 75%;
+    .with-margin .wrapper-75:first-child {
       margin-left: 0; } }
 .padded-content {
   padding: 4%;
   float: left;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box; }
-  @media only screen and (min-width: 660px) {
+  width: 92%;
+  /*Not using borderbox for ie7 support*/ }
+  .padded-content.horizontal {
+    padding-top: 0;
+    padding-bottom: 0; }
+  @media only screen and (min-width: 600px) {
     .padded-content {
       padding: 3%;
-      width: 94%; } }
+      width: 94%;
+      /*Not using borderbox for ie7 support*/ }
+      .padded-content.horizontal {
+        padding-top: 0;
+        padding-bottom: 0; } }
   @media only screen and (min-width: 768px) {
     .padded-content {
       padding: 2%;
-      width: 96%; } }
-  @media only screen and (min-width: 960px) {
-    .padded-content {
-      padding: 0;
-      width: 100%; } }
+      width: 96%;
+      /*Not using borderbox for ie7 support*/ }
+      .padded-content.horizontal {
+        padding-top: 0;
+        padding-bottom: 0; } }
 
-.padded-content-horizontal {
-  padding: 0 4%;
-  float: left;
-  width: 92%; }
-  @media only screen and (min-width: 660px) {
-    .padded-content-horizontal {
-      padding: 0 3%;
-      width: 96%; } }
-  @media only screen and (min-width: 768px) {
-    .padded-content-horizontal {
-      padding: 0 2%;
-      width: 96%; } }
-  @media only screen and (min-width: 960px) {
-    .padded-content-horizontal {
-      padding: 0;
-      width: 100%; } }
+/*Needed to overwrite previous selectors*/
+.with-75-right .padded-content.horizontal, .wrapper-75 + .wrapper-25 .padded-content.horizontal {
+  padding-top: 0;
+  padding-bottom: 0; }
 
 /*Spacings*/
 .margin-bottom {
@@ -333,9 +408,12 @@ textarea {
 .no-margin-top {
   margin-top: 0 !important; }
 
+.ie9 .with-equal-height {
+  overflow: hidden;
+  margin-bottom: 12px; }
+
+.ie9 .with-equal-height > div {
+  padding-bottom: 100%;
+  margin-bottom: -100%; }
+
 /*Main CSS*/
-hr {
-  height: 1px;
-  border: 0;
-  float: left;
-  width: 100%; }

@@ -20,7 +20,4 @@ Gemfile.lock
 
 #Sublime workspace files
 .sublime-workspace
-.sublime-projects
-
-#Ignore old css files that are needed for testing only to keep file structure tidy
-css/old/
+.sublime-project
