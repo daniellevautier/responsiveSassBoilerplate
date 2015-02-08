@@ -4,7 +4,7 @@ This mobile first boilerplate can be run and compiled with middleman https://mid
 
 ## It includes...
 
-####A basic grid framework based on the following width classes:
+**A basic grid framework based on the following width classes:**
  + wrapper-100 
  + wrapper-33 
  + wrapper-50
@@ -21,9 +21,9 @@ This mobile first boilerplate can be run and compiled with middleman https://mid
 </div>
 ```
 
-####The ability to add equal margins to wrappers with the class *.with-margin* added to the .wrapper-container.
+**The ability to add equal margins** to wrappers with the class *.with-margin* added to the .wrapper-container.
 
-####Equal padding using the *.padded-content* class inside of the wrapper class e.g.
+**Equal padding** using the *.padded-content* class inside of the wrapper class e.g.
 
 ``` 
 <div class="wrapper-50">
@@ -33,7 +33,7 @@ This mobile first boilerplate can be run and compiled with middleman https://mid
 </div>
 ```
 
-####Horizontal padding using the *.horizontal* class in conjunction with the .padded-content class
+**Horizontal padding** using the *.horizontal* class in conjunction with the .padded-content class
 
 ## Browser Support
 Tested in Chrome, Firefox, IE10, IE9*, IE8*, IE7*, IOS7 but am confident other major browsers will be supported. * There are some alternative options for these browsers (see below). 
