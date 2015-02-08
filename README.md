@@ -1,19 +1,18 @@
-# Responsive Template
+# Responsive SASS Boilerplate
 
-This mobile first boilerplate is run and compiled using middleman https://middlemanapp.com.
-
+This mobile first boilerplate can be run and compiled with middleman https://middlemanapp.com. Alternatively the */source* folder contains the static HTML. 
 
 ## It includes...
 
-1. A basic grid framework based on the following widths:
-* .wrapper-100 
-* .wrapper-33 
-* .wrapper-50
-* .wrapper-25
-* .wrapper-75
-* .wrapper-66
+1. A basic grid framework based on the following width classes:
+  + wrapper-100 
+  + wrapper-33 
+  + wrapper-50
+  + wrapper-25
+  + wrapper-75
+  + wrapper-66
 
-**Note:** .wrapper-container should be used as an immediate parent for all wrapper options except wrapper-100 e.g.
+**Note:** wrapper-container should be used as an immediate parent for all wrapper options except wrapper-100 e.g.
 
 ``` 
 <div class="wrapper-container">
@@ -37,17 +36,20 @@ This mobile first boilerplate is run and compiled using middleman https://middle
 4. Horizontal padding using the *.horizontal* class in conjunction with the .padded-content class
 
 ## Browser Support
-All major browsers are supported.
+Tested in Chrome, Firefox, IE10, IE9*, IE8*, IE7*, IOS7 but am confident other major browsers will be supported. * There are some alternative options for these browsers (see below). 
 
 ### Media queries
-Media queries are not supported in Internet Explorer 8 or below. On build a style sheet will be compiled *ie.css* that ommits the media queries form your SASS files.
+Media queries are not supported in Internet Explorer 8 or below by default. When compiled a style sheet will be compiled *ie.css* that ommits the media queries used in your SASS files.
 **Note:** This requires the user of the mixin *@mixin viewport($width)*.
 
+Alternatively you can use a polyfill such as respond.js https://github.com/scottjehl/Respond  
+
 ###Flexbox
-Flexbox is not supported in Internet Explorer 9 or below. If wanting to use the flexbox class *.with-equal-height* make sure you set your conditional statement to:
+Flexbox is not supported in Internet Explorer 9 or below. If you're wanting to use the flexbox class *.with-equal-height* with the fallback supplied, make sure you set your conditional statement to:
 
 ``` 
 <!--[if lte IE 9]>
 ```
 
-Author: Danielle Vautier, I hold no responsibility for your broken code.
+**Author**: Danielle Vautier, I take no responsibility for your code.
+
