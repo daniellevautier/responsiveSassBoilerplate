@@ -1,41 +1,100 @@
 /*Main CSS*/
-
-/*h1, h2, h3, h4, .h1, .h2, .h3, .h4{
-
+body {
+	font-family:$primaryFont;
+	line-height:1.4;
+	font-size:16px;
 }
 
-h1, .h1 {
+/*Typograpghy Classes*/
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+	font-family:$secondaryFont;
+} 
 
+h1, .h1 {
+	font-size:40px;
+	padding:0 0 $setSpacing /2 0;
 }
 
 h2, .h2 {
-
+	font-size:32px;
+	padding:0 0 $setSpacing /2 0;
 }
 
 h3, .h3 {
-
+	font-size:26px;
+	padding:0 0 $setSpacing /2 0;
 }
 
 h4, .h4 {
+	font-size:20px;
+	padding:0 0 $setSpacing /2 0;
+}
 
-}*/
+p, ul, ol {
+	padding:0 0 $setSpacing /2 0;
+}
+
+/*Form Styles*/
+/*
+:required {
+	background:red;
+}
+
+:required:hover {
+	
+}
+
+::-webkit-input-placeholder {
+   color: #ccc;
+}
+
+:-moz-placeholder { 
+  color: #ccc;
+}
+
+::-moz-placeholder { 
+   color: #ccc;
+}
+
+:-ms-input-placeholder {  
+   color: #ccc;  
+}
+
+input[type=text], input[type=email], input[type=password] {
+	
+}
+
+button, input[type="submit"], .button {
+	
+}
+
+.form-field-wrapper {
+
+}
+
+*/
+
+/*Wrapper Styles*/
+.wrapper-100 {
+	background:#b21414;
+}
 
 .wrapper-50 {
-	background:#00aeae;
+	background:#da630b;
 }
 
 .wrapper-25 {
-	background:#33d0d2;
+	background:#0f9b33;
 }
 
 .wrapper-33 {
-	background:#348cb5;
+	background:#ffe400;
 }
 
 .wrapper-66 {
-	background:#039ae1;
+	background:#bb2171;
 }
 
 .wrapper-75 {
-	background:#a1d3de;
+	background:#0f579b;
 }

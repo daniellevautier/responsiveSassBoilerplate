@@ -178,6 +178,7 @@ textarea {
 .hide {
   display: none; }
 
+/*Use these if using Google fonts where more than one property is required */
 /*Set container and desktop variable for media queries*/
 /*Set global spacing*/
 /*Fonts*/
@@ -190,12 +191,13 @@ textarea {
   color: #a80d02; }
 
 .primary-font {
-  font-family: Georgia, Times, sans-serif !important; }
+  font-family: Arial, sans-serif !important; }
 
 .secondary-font {
-  font-family: Arial, sans-serif !important; }
+  font-family: Georgia, Times, sans-serif !important; }
 
 /*Framwork CSS*/
+/*Use these if using Google fonts where more than one property is required */
 /*Set container and desktop variable for media queries*/
 /*Set global spacing*/
 /*Fonts*/
@@ -208,10 +210,10 @@ textarea {
   color: #a80d02; }
 
 .primary-font {
-  font-family: Georgia, Times, sans-serif !important; }
+  font-family: Arial, sans-serif !important; }
 
 .secondary-font {
-  font-family: Arial, sans-serif !important; }
+  font-family: Georgia, Times, sans-serif !important; }
 
 /*Wrapper*/
 .container {
@@ -224,21 +226,6 @@ textarea {
   width: 100%;
   float: left;
   margin-bottom: 12px; }
-
-.wrapper-50 {
-  background: #00aeae; }
-
-.wrapper-25 {
-  background: #33d0d2; }
-
-.wrapper-33 {
-  background: #348cb5; }
-
-.wrapper-66 {
-  background: #039ae1; }
-
-.wrapper-75 {
-  background: #a1d3de; }
 
 .wrapper-container {
   width: 100%;
@@ -413,6 +400,92 @@ textarea {
   margin-bottom: -100%; }
 
 /*Main CSS*/
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  font-size: 16px; }
+
+/*Typograpghy Classes*/
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+  font-family: Georgia, Times, sans-serif; }
+
+h1, .h1 {
+  font-size: 40px;
+  padding: 0 0 6px 0; }
+
+h2, .h2 {
+  font-size: 32px;
+  padding: 0 0 6px 0; }
+
+h3, .h3 {
+  font-size: 26px;
+  padding: 0 0 6px 0; }
+
+h4, .h4 {
+  font-size: 20px;
+  padding: 0 0 6px 0; }
+
+p, ul, ol {
+  padding: 0 0 6px 0; }
+
+/*Form Styles*/
+/*
+:required {
+	background:red;
+}
+
+:required:hover {
+	
+}
+
+::-webkit-input-placeholder {
+   color: #ccc;
+}
+
+:-moz-placeholder { 
+  color: #ccc;
+}
+
+::-moz-placeholder { 
+   color: #ccc;
+}
+
+:-ms-input-placeholder {  
+   color: #ccc;  
+}
+
+input[type=text], input[type=email], input[type=password] {
+	
+}
+
+button, input[type="submit"], .button {
+	
+}
+
+.form-field-wrapper {
+
+}
+
+*/
+/*Wrapper Styles*/
+.wrapper-100 {
+  background: #b21414; }
+
+.wrapper-50 {
+  background: #da630b; }
+
+.wrapper-25 {
+  background: #0f9b33; }
+
+.wrapper-33 {
+  background: #ffe400; }
+
+.wrapper-66 {
+  background: #bb2171; }
+
+.wrapper-75 {
+  background: #0f579b; }
+
 /*IE Specific Styles*/
 .container {
   width: 1200px; }

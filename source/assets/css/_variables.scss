@@ -31,12 +31,22 @@
   box-sizing:border-box;
 }
 
+/*Use these if using Google fonts where more than one property is required */
+@mixin primaryFont() {
+  font-family: Arial, sans-serif;
+}
+
+@mixin secondaryFont() {
+  font-family: Georgia, Times, sans-serif;
+}
+
+
 $desktop: 1200px; /*Set container and desktop variable for media queries*/
 $setSpacing: 12px; /*Set global spacing*/
 
 /*Fonts*/
-$primaryFont: Georgia, Times, sans-serif;
-$secondaryFont: Arial, sans-serif;
+$secondaryFont: Georgia, Times, sans-serif;
+$primaryFont: Arial, sans-serif;
 
 /*Colours*/
 $red:#A80D02;
