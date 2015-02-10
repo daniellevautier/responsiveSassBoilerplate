@@ -35,6 +35,8 @@ This mobile first boilerplate can be run and compiled with middleman https://mid
 
 **Horizontal padding** using the *.horizontal* class in conjunction with the .padded-content class
 
+**Retina media queries** using the mixin *highDPI*. Note: this won't be compiled in the IE stylesheet.
+
 ## Browser Support
 Tested in Chrome, Firefox, IE10, IE9*, IE8*, IE7*, IOS7 but am confident other major browsers will be supported. * There are some alternative options for these browsers (see below). 
 
