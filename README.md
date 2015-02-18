@@ -53,6 +53,8 @@ Flexbox is not supported in Internet Explorer 9 or below. If you're wanting to u
 <!--[if lte IE 9]>
 ```
 
+Flexbox for < iOS7 requires child elements to have a property of *float:none* to display.
+
 **Author**: Danielle Vautier, I take no responsibility for your code.
 
 ##The MIT License (MIT)
