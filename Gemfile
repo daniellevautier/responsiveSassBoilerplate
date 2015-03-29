@@ -7,6 +7,9 @@ gem "middleman", "~>3.2.2"
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
 
+gem 'sass', '3.2.19'
+gem 'compass', '0.12.6'
+
 require 'rbconfig'
 gem 'wdm', '>= 0.1.0' if RbConfig::CONFIG['target_os'] =~ /mswin|mingw/i
 

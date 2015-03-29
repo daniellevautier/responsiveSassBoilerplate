@@ -32,7 +32,7 @@
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
- 	.wrapper-100, .wrapper-33, .wrapper-50, .wrapper-25, .wrapper-40, .wrapper-60, .wrapper-75, .wrapper-66 {
+ 	> .wrapper-100, > .wrapper-33, > .wrapper-50, > .wrapper-25, > .wrapper-40, > .wrapper-60, > .wrapper-75, > .wrapper-66 {
  		float:none;
  	}
 }

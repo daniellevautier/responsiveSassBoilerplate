@@ -27,7 +27,7 @@ This mobile first boilerplate can be run and compiled with middleman https://mid
 
 ``` 
 <div class="wrapper-50">
-	<div class="padded-content
+	<div class="padded-content">
 		<h2>Wrapper 50</h2>		
 	</div>
 </div>
