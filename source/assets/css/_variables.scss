@@ -45,6 +45,14 @@
   box-sizing:border-box;
 }
 
+
+@mixin calc($property, $expression) {
+  #{$property}: -webkit-calc(#{$expression});
+     #{$property}: -moz-calc(#{$expression});
+       #{$property}: -o-calc(#{$expression});
+          #{$property}: calc(#{$expression});
+}
+
 /*Use these if using Google fonts where more than one property is required */
 @mixin primaryFont() {
   font-family: Arial, sans-serif;
@@ -53,7 +61,6 @@
 @mixin secondaryFont() {
   font-family: Georgia, Times, sans-serif;
 }
-
 
 $desktop: 1200px; /*Set container and desktop variable for media queries*/
 $setSpacing: 12px; /*Set global spacing*/
