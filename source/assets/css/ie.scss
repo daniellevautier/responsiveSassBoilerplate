@@ -22,7 +22,10 @@ $mediaQueries:  false;
 	margin-bottom:-100%;
 }
 
-
+/*issue with PNGS*/
+img {
+	max-width:auto;
+}
 
 /*Framework Fixes for < IE7*/
 .lt-ie8 {
