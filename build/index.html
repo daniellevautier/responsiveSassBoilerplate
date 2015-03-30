@@ -31,7 +31,7 @@
 <header>  
      <!-- .container is used if there are full width elements on the page otherwise just have one wrapper -->
     <div class="container">
-    
+        <h1>Company</h1>
         <!-- helpful shortcute for screen readers -->
         <section class="accessibility-help hide">
             <h2 class="hide">Accessibility links</h2>
@@ -186,8 +186,13 @@
 <script>window.jQuery || document.write('<script src="assets/scripts/jquery-1.11.2.min.js"><\/script>')</script>
 
 <!-- For any custom JS -->
-<!--<script src="assets/scripts/enquire.min.js" type="text/javascript"></script>-->
-<!--<script src="assets/scripts/custom.js" type="text/javascript"></script>-->
+<script src="assets/scripts/custom.js" type="text/javascript"></script>
+
+<script>
+$(function() {
+ 	preventOrphans();
+})
+</script>
 
 
 </body>
