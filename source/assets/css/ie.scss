@@ -22,10 +22,10 @@ $mediaQueries:  false;
 	margin-bottom:-100%;
 }
 
-/*issue with PNGS*/
-img {
-	max-width:none;
-}
+/*issue with PNGS not fully tested*/
+// img {
+// 	max-width:none;
+// }
 
 /*Framework Fixes for < IE7*/
 .lt-ie8 {
