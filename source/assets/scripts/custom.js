@@ -1,10 +1,9 @@
-﻿var preventOrphans = function() {
-	$("p").each(function() {
-	  var wordArray = $(this).text().split(" ");
-	  if (wordArray.length > 1) {
-	    wordArray[wordArray.length-2] += "&nbsp;" + wordArray[wordArray.length-1];
-	    wordArray.pop();
-	    $(this).html(wordArray.join(" "));
-	  }
+﻿var preventOrphans = function(element) {
+	//Would suggest this is used for title text mainly
+
+	$(element).each(function(){
+	    var string = $(this).html();
+	    string = string.replace(/ ([^ ]*)$/,'&nbsp;$1');
+	    $(this).html(string);
 	});
 }
