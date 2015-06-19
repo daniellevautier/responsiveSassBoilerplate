@@ -120,3 +120,12 @@ button, input[type="submit"], .button {
 .wrapper-75 {
 	background:#0f579b;
 }
+
+.no-background-colours .wrapper-100,
+.no-background-colours .wrapper-50,
+.no-background-colours .wrapper-25,
+.no-background-colours .wrapper-33,
+.no-background-colours .wrapper-66,
+.no-background-colours .wrapper-75 {
+	background-color:transparent;
+}

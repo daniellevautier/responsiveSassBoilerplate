@@ -7,6 +7,8 @@ $mediaQueries:  false;
 @import 'framework';
 @import 'css';
 
+$ie7padding: 5%;
+
 /*IE Specific Styles*/
 .container {
 	width:$desktop;
@@ -14,12 +16,13 @@ $mediaQueries:  false;
 
 .with-equal-height {
 	overflow:hidden;
-	margin-bottom:$setSpacing;
+	margin-bottom:$margin-vertical-desktop;
 }
 
 .with-equal-height > div {
 	padding-bottom:100%;
 	margin-bottom:-100%;
+	float:left;
 }
 
 /*issue with PNGS not fully tested*/
@@ -62,4 +65,72 @@ $mediaQueries:  false;
 	.wrapper-container  {
 		margin-bottom: $setSpacing;
 	}
+
+	.padded-content {
+		padding:$ie7padding;
+		width:100% - ($ie7padding * 2); /*Not using borderbox for ie7 support*/
+
+		&.horizontal {
+			padding-top:0;
+			padding-bottom: 0;
+		}
+
+		@include viewport(600) {
+			padding:($ie7padding * 0.75);
+			width:100% - (($ie7padding * 0.75) * 2); /*Not using borderbox for ie7 support*/
+
+			&.horizontal {
+				padding-top:0;
+				padding-bottom: 0;
+			}
+		}
+
+		@include viewport(768) {
+			padding:$ie7padding / 2;
+			width:100% - $ie7padding; /*Not using borderbox for ie7 support*/
+			&.horizontal {
+				padding-top:0;
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	.wrapper-25 .padded-content {
+		padding:$ie7padding * 2;
+		width:100% - (($ie7padding * 2) * 2) ;
+	}
+
+	.wrapper-50 .padded-content {
+		padding:$ie7padding;
+		width:100% - ($ie7padding * 2) ;
+	}
+
+	.wrapper-33 .padded-content {
+		padding:$ie7padding * 1.5;
+		width:100% - (($ie7padding * 1.5) * 2) ;
+	}
+
+	.wrapper-66 .padded-content {
+		padding:$ie7padding * 0.722 $ie7padding * 0.75;
+		width:100% - (($ie7padding * 0.75) * 2) ;
+	}
+
+	.wrapper-75 .padded-content {
+		padding:$ie7padding * 0.62 $ie7padding * 0.64;
+		width:100% - (($ie7padding * 0.64) * 2) ;
+	}
+
+
+	.wrapper-75 + .wrapper-25 .padded-content , .wrapper-25.with-75-right .padded-content {
+		padding:$ie7padding * 2;
+		width:100% - (($ie7padding * 2) * 2) ;
+	}
+
+	/*Needed to overwrite previous selectors*/
+	.with-75-right .padded-content.horizontal, .wrapper-75 + .wrapper-25 .padded-content.horizontal{
+		padding-top:0;
+		padding-bottom: 0;
+	}
+
 }
+
