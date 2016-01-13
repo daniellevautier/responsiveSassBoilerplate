@@ -25,10 +25,16 @@ $ie7padding: 5%;
 	float:left;
 }
 
-/*issue with PNGS not fully tested*/
-// img {
-// 	max-width:none;
-// }
+
+.ie-flex-fix {
+	padding-bottom:0!important;
+	margin-bottom:0!important;
+
+	> div {
+		padding-bottom:0!important;
+		margin-bottom:0!important;
+	}
+} 
 
 /*Framework Fixes for < IE7*/
 .lt-ie8 {
@@ -132,5 +138,13 @@ $ie7padding: 5%;
 		padding-bottom: 0;
 	}
 
+}
+
+.form-field-wrapper.placeholder-label label {
+	display:block;
+}
+
+.form-field-wrapper.placeholder-label input[type="text"] {
+	width:70%;
 }
 

@@ -24,72 +24,85 @@
             @content;
          }
     } @else {}
-  }
+}
 
 //CSS Mixins
-@mixin border-radius($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
-       -o-border-radius: $radius;
-          border-radius: $radius;
+@mixin flexBox() {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
 }
 
-@mixin box-shadow($shadow) {
-  -webkit-box-shadow: $shadow;
-     -moz-box-shadow: $shadow;
-      -ms-box-shadow: $shadow;
-       -o-box-shadow: $shadow;
-          box-shadow: $shadow;
+@mixin flexOrder($order) {
+-webkit-order: $order;
+    -ms-order: $order;
+        order: $order;
 }
 
-@mixin box-sizing() {
-  -moz-box-sizing:border-box;
-  -webkit-box-sizing:border-box;
-  -ms-box-sizing:border-box;
-  box-sizing:border-box;
+@mixin flexWrap() {
+-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+@mixin flexAlign($position) {
+-webkit-align-items: $position;
+  -webkit-box-align: $position;
+     -ms-flex-align: $position;
+        align-items: $position;
 }
 
 
-@mixin calc($property, $expression) {
-  #{$property}: -webkit-calc(#{$expression});
-     #{$property}: -moz-calc(#{$expression});
-       #{$property}: -o-calc(#{$expression});
-          #{$property}: calc(#{$expression});
+
+
+@mixin cssTransform($transformProperty) {
+  -webkit-transform: $transformProperty; /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
+      -ms-transform: $transformProperty; /* IE 9 */
+          transform: $transformProperty; /* IE 10, Fx 16+, Op 12.1+ */
 }
 
-/*Use these if using Google fonts where more than one property is required */
+@mixin cssGradient($hex1, $hex2, $gradientDirection:to bottom) {
+    background-color: $hex1; 
+    background: linear-gradient($gradientDirection, $hex1 0%, $hex2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#{$hex1}', EndColorStr='#{$hex2}')";
+}
+
+/*Fonts*/
+$primaryFont: Arial, sans-serif;
+$secondaryFont: Georgia, Times, sans-serif;
+
+/*Use these if using Google fonts where more than one property
+is required e.g. font-weight*/
 @mixin primaryFont() {
   font-family: Arial, sans-serif;
+  font-weight:300;
 }
 
 @mixin secondaryFont() {
   font-family: Georgia, Times, sans-serif;
+  font-weight:300;
 }
 
+/*Set Sizes*/
 $desktop: 1200px; /*Set container and desktop variable for media queries*/
 $setSpacing: 12px; /*Set global spacing*/
-
-/*Fonts*/
-$secondaryFont: Georgia, Times, sans-serif;
-$primaryFont: Arial, sans-serif;
 
 /*Colours*/
 $red:#A80D02;
 
 /*Universal Classes*/
-.primary-colour {color:$red;}
-.secondary-colour {color:$red;}
 .primary-font {font-family:$primaryFont!important;}
 .secondary-font {font-family:$secondaryFont!important;}
 
-// @font-face {
-//     font-family: 'fontname';
-//     src: url('../fonts/fontname-webfont.eot');
-//     src: url('../fonts/fontname-webfont.eot?#iefix') format('embedded-opentype'),
-//          url('../fonts/fontname-webfont.woff') format('woff'),
-//          url('../fonts/fontname-webfont.ttf') format('truetype'),
-//          url('../fonts/fontname-webfont.svg#akzidenz-grotesk_stdbold') format('svg');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+/*Use for embedding fonts*/
+/*@font-face {
+    font-family: 'fontname';
+    src: url('../fonts/fontname-webfont.eot');
+    src: url('../fonts/fontname-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fontname-webfont.woff') format('woff'),
+         url('../fonts/fontname-webfont.ttf') format('truetype'),
+         url('../fonts/fontname-webfont.svg#akzidenz-grotesk_stdbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}*/

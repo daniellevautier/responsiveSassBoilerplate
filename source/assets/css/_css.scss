@@ -35,46 +35,90 @@ p, ul, ol {
 	widows: 2;
 }
 
-
-/*Form Styles*/
-/*
-:required {
-	background:red;
-}
-
-:required:hover {
-	
-}
-
+/*Form helpers*/
 ::-webkit-input-placeholder {
-   color: #ccc;
+   color: #000;
+   opacity:1;
 }
 
-:-moz-placeholder { 
-  color: #ccc;
+:-ms-input-placeholder { 
+  color: #000;
+  opacity:1;
 }
 
-::-moz-placeholder { 
-   color: #ccc;
+::-ms-input-placeholder {  
+   color: #000;  
+   opacity:1;
 }
 
-:-ms-input-placeholder {  
-   color: #ccc;  
+::-moz-placeholder {
+	color: #000;  
+    opacity:1;
 }
 
-input[type=text], input[type=email], input[type=password] {
-	
-}
-
-button, input[type="submit"], .button {
-	
-}
 
 .form-field-wrapper {
+	float:left;
+	width:100%;
+	margin-bottom:$setSpacing;
 
+	label {
+		float:left;
+		width:100%;
+		margin-bottom:2px;
+	}
+
+	input[type=text],
+	input[type=email],
+	input[type=password] {
+		width:100%;
+		box-sizing:border-box;
+		padding:$setSpacing/2;
+	}
+
+	button, input[type=submit] {
+		padding:$setSpacing/2;
+	}
+
+	&.placeholder-label label {
+		display:none;
+	}
+
+	@include viewport(768) {
+		label {
+			width:30%;
+			margin:$setSpacing/2 0;
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=password] {
+		width:70%;
+		}
+
+		&.placeholder-label input[type=text],
+		&.placeholder-label input[type=email],
+		&.placeholder-label input[type=password] {
+			width:100%;
+		}
+	}
+
+	@include viewport(768) {
+		label {
+			width:20%;
+		}
+
+		input[type=text],
+		input[type=email],
+		input[type=password] {
+		width:80%;
+		}
+	}
 }
 
-*/
+form {
+	margin:$setSpacing/2 0;
+}
 
 /*Elastic Videoes / Maps*/
 .item-container {
@@ -95,37 +139,11 @@ button, input[type="submit"], .button {
 	height: 100%;
 }
 
-
-/*Wrapper Styles*/
-.wrapper-100 {
-	background:#b21414;
-}
-
-.wrapper-50 {
-	background:#da630b;
-}
-
-.wrapper-25 {
-	background:#0f9b33;
-}
-
-.wrapper-33 {
-	background:#ffe400;
-}
-
-.wrapper-66 {
-	background:#bb2171;
-}
-
-.wrapper-75 {
-	background:#0f579b;
-}
-
-.no-background-colours .wrapper-100,
-.no-background-colours .wrapper-50,
-.no-background-colours .wrapper-25,
-.no-background-colours .wrapper-33,
-.no-background-colours .wrapper-66,
-.no-background-colours .wrapper-75 {
-	background-color:transparent;
+.background-colour .wrapper-100,
+.background-colour .wrapper-50,
+.background-colour .wrapper-33,
+.background-colour .wrapper-25,
+.background-colour .wrapper-66,
+.background-colour .wrapper-75 {
+	background-color:pink;
 }

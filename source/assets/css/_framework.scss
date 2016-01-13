@@ -1,12 +1,17 @@
-/*Framwork CSS*/
+/* Framwork CSS */
+/* Please set your spacing below with the relevant percentage or pixels */
+/* $setSpacing defined in variables */
 $margin-horizontal: 2%; /*Has to be a percentage*/
-$margin-vertical: $setSpacing; /*Has to be a pixel*/
-$margin-vertical-tablet: $setSpacing * 1.5; /*Has to be a pixel*/
-$margin-vertical-desktop: $setSpacing * 2; /*Has to be a pixel*/
-$padding-horizontal: ($setSpacing * 2); /*Has to be a pixel - setSpacing defined in variables*/
-$padding-vertical: ($setSpacing * 2); /*Has to be a pixel - setSpacing defined in variables*/
+$margin-vertical: $setSpacing; /*Should be in pixels*/
+$margin-vertical-tablet: $setSpacing * 1.5; /*Should be in pixels*/
+$margin-vertical-desktop: $setSpacing * 2; /*Should be in pixels*/
 
-/*Wrapper*/
+$padding-horizontal: $setSpacing * 2; /*Can be either pixels or %*/
+$padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
+
+/* Desktop viewport is set up as 980 to target 1024 x 768 resolutions */
+
+/*Central wrapper*/
 .container {
   max-width:$desktop;
   margin:0 auto;
@@ -32,24 +37,15 @@ $padding-vertical: ($setSpacing * 2); /*Has to be a pixel - setSpacing defined i
     clear:left;
 }
 
-
 @include viewport(600) {
 	.with-equal-height {
-	  display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
-	  display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
-	  display: -ms-flexbox;           /* TWEENER - IE 10 */
-	  display: -webkit-flex;          /* NEW - Chrome */
-	  display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-	  -moz-box-flex: 1;
-	  -webkit-flex-wrap: wrap;
-	  -ms-flex-wrap: wrap;
-	  flex-wrap: wrap;
+	  @include flexBox();
+	  @include flexWrap();
 
 	 	> div {
-	 		float:none;
+	 		float:none; /*Required for IOS8*/
 	 	}
 	}
-
 
 	.wrapper-50 {
 		width:50%;
@@ -88,9 +84,7 @@ $padding-vertical: ($setSpacing * 2); /*Has to be a pixel - setSpacing defined i
 			margin-left:0;
 			width:100%;
 		}
-
 	}
-
 }
 
 @include viewport(660) {
@@ -168,8 +162,7 @@ $padding-vertical: ($setSpacing * 2); /*Has to be a pixel - setSpacing defined i
 	padding: $padding-vertical $padding-horizontal;
 	float:left;
 	width:100%;
-	@include box-sizing();
-
+	box-sizing:border-box;
 
 	&.horizontal {
 		padding-top:0;
@@ -191,17 +184,24 @@ $padding-vertical: ($setSpacing * 2); /*Has to be a pixel - setSpacing defined i
 	}
 }
 
-.mobile-margin {
-	margin: 0 4%;
-}
-
 /*Needed to overwrite previous selectors*/
 .with-75-right .padded-content.horizontal, .wrapper-75 + .wrapper-25 .padded-content.horizontal{
 	padding-top:0;
 	padding-bottom: 0;
 }
 
-/*Spacings*/
+/*Use this on a wrapper-container or wrapper-100 
+to give it left and right padding on mobile */
+.mobile-padding {
+	padding: 0 $padding-horizontal;
+	box-sizing:border-box;
+
+	@include viewport(980) {
+		padding: 0;
+	}
+}
+
+/*Margins*/
 .margin-bottom {
 	margin-bottom:$setSpacing!important;
 } 
@@ -226,6 +226,13 @@ $padding-vertical: ($setSpacing * 2); /*Has to be a pixel - setSpacing defined i
 	margin-top:0!important;
 } 
 
+.vert-align-center {
+	@include flexBox();
+	@include flexAlign(center);
+	align-items: center;
+}
+
+
 /*
 If you choose to show this stylesheet for ie9 uncomment these 
 .ie9 .with-equal-height {
@@ -238,3 +245,4 @@ If you choose to show this stylesheet for ie9 uncomment these
 	margin-bottom:-100%;
 }
 */
+
