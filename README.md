@@ -2,6 +2,18 @@
 
 This mobile first boilerplate can be run and compiled with middleman https://middlemanapp.com. Alternatively the */source* folder contains the static HTML. 
 
+###Ruby Versions
+Currently the best combination for this project is: 
++ Ruby Version: 2.0.0p647 (not the x64 bit as this has compatibility issues)
++ Development Kit: DevKit-mingw64-32-4.7.2-20130224-1151-sfx (not the x64 bit as this has compatibility issues)
+
+Windows users see [rubyinstaller.org](http://rubyinstaller.org/downloads/) for more details.
+
+## Updates
++ 13.01.16 - Update to HTML, variables, removed and added mixins, prefixes and framework padding, see commit for more details
++ 12.05.15 - Update JQuery to 1.11.3
++ 10.02.15 - Added highDPI mixin  
+
 ## It includes...
 
 **A basic grid framework based on the following width classes:**
@@ -33,6 +45,8 @@ This mobile first boilerplate can be run and compiled with middleman https://mid
 </div>
 ```
 
+**padded-content spacing variables** these are now set at the start of _framework.scss
+
 **Horizontal padding** using the *.horizontal* class in conjunction with the .padded-content class
 
 **Retina media queries** using the mixin *highDPI*. Note: this won't be compiled in the IE stylesheet.
@@ -46,14 +60,26 @@ Media queries are not supported in Internet Explorer 8 or below by default. When
 
 Alternatively you can use a polyfill such as respond.js https://github.com/scottjehl/Respond  
 
+### Mixins
+I have updated the mixins to use the relevant prefixes as well as including the following:
++ flexBox()
++ flexOrder()
++ flexWrap()
++ flexAlign()
++ cssTransform()
++ cssGradient()
+
+
 ###Flexbox
-Flexbox is not supported in Internet Explorer 9 or below. If you're wanting to use the flexbox class *.with-equal-height* with the fallback supplied, make sure you set your conditional statement to:
+Flexbox is not supported in Internet Explorer 9 or below. If you're wanting to use any of the flexbox classes such as *.with-equal-height* or *vert-align* make sure you include your ie.css in the following conditional statement:
 
 ``` 
 <!--[if lte IE 9]>
 ```
 
 Flexbox for < iOS7 requires child elements to have a property of *float:none* to display.
+
+For more support tables check out http://caniuse.com.
 
 **Author**: Danielle Vautier, I take no responsibility for your code.
 

@@ -47,10 +47,11 @@ hr {
   border: 0;
   float:left;
   width:100%;
+  background:#ccc;
   }
 
 h1, h2, h3, h4, h5 {
-	text-rendering: optimizeLegibility;
+	//text-rendering: optimizeLegibility; Issues on android 4.3 with this
 } 
 
 code, kbd, pre, samp {

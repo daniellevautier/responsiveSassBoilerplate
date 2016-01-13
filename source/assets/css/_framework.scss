@@ -1,7 +1,17 @@
-/*Framwork CSS*/
-@import 'variables';
+/* Framwork CSS */
+/* Please set your spacing below with the relevant percentage or pixels */
+/* $setSpacing defined in variables */
+$margin-horizontal: 2%; /*Has to be a percentage*/
+$margin-vertical: $setSpacing; /*Should be in pixels*/
+$margin-vertical-tablet: $setSpacing * 1.5; /*Should be in pixels*/
+$margin-vertical-desktop: $setSpacing * 2; /*Should be in pixels*/
 
-/*Wrapper*/
+$padding-horizontal: $setSpacing * 2; /*Can be either pixels or %*/
+$padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
+
+/* Desktop viewport is set up as 980 to target 1024 x 768 resolutions */
+
+/*Central wrapper*/
 .container {
   max-width:$desktop;
   margin:0 auto;
@@ -12,7 +22,13 @@
 .wrapper-100, .wrapper-33, .wrapper-50, .wrapper-25, .wrapper-75, .wrapper-66 {
     width:100%;
     float:left;
-    margin-bottom:$setSpacing;
+    margin-bottom:$margin-vertical;
+    @include viewport(660) {
+    	margin-bottom: $margin-vertical-tablet;
+    }
+     @include viewport(980) {
+    	margin-bottom: $margin-vertical-desktop;
+    }
 }
 
 .wrapper-container {
@@ -21,55 +37,33 @@
     clear:left;
 }
 
-.with-equal-height {
-  display: -webkit-box;           /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;              /* OLD - Firefox 19- (doesn't work very well) */
-  display: -ms-flexbox;           /* TWEENER - IE 10 */
-  display: -webkit-flex;          /* NEW - Chrome */
-  display: flex;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  -moz-box-flex: 1;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-
- 	> .wrapper-100, > .wrapper-33, > .wrapper-50, > .wrapper-25, > .wrapper-40, > .wrapper-60, > .wrapper-75, > .wrapper-66 {
- 		float:none;
- 	}
-}
-
 @include viewport(600) {
+	.with-equal-height {
+	  @include flexBox();
+	  @include flexWrap();
+
+	 	> div {
+	 		float:none; /*Required for IOS8*/
+	 	}
+	}
+
 	.wrapper-50 {
 		width:50%;
-
-		.padded-content {
-			padding:6%;
-			width:88%;
-		}
 	}
 	
 	.wrapper-25 {
 		width:50%;
 		margin-left:0;
-
-		.padded-content {
-			padding:6%;
-			width:88%;
-		}
 	}
 
 	.wrapper-75 + .wrapper-25, .wrapper-25.with-75-right {
 		width:100%;
-
-		.padded-content {
-			padding:3%;
-			width:94%;
-		}
 	}
 
 	.with-margin { 
 		.wrapper-50 {
-			margin-left: 1%;
-		    width:49.5%;
+			margin-left: $margin-horizontal;
+		    width:50% - ($margin-horizontal/2);
 
 		    &:first-child {
 		      margin-left:0;
@@ -78,11 +72,11 @@
 
 		.wrapper-25 {
 			margin-left: 0%;
-		    width:49.5%;
+		    width:50% - ($margin-horizontal/2);
 
 
 		    &:nth-child(2n) {
-		      margin-left:1%;
+		      margin-left:$margin-horizontal;
 		    }
 		}
 
@@ -90,35 +84,23 @@
 			margin-left:0;
 			width:100%;
 		}
-
 	}
-
 }
 
 @include viewport(660) {
 	.wrapper-66 {
 		width:66.66%;
-
-		.padded-content {
-			padding:5%;
-			width:90%;
-		}
 	}
 	
 	.wrapper-33 {
 		width:33.33%;
-
-		.padded-content {
-			padding:9%;
-			width:82%;
-		}
 	}
 
 
 	.with-margin { 
 		.wrapper-33 {
-			margin-left: 1%;
-		    width:32.66%;
+		   margin-left: $margin-horizontal;
+		   width:((100% - (2 * $margin-horizontal)) / 3);
 
 		    &:first-child {
 		      margin-left:0;
@@ -126,12 +108,12 @@
 		}
 
 		.wrapper-66 + .wrapper-33 {
-			margin-left:1%;
+			margin-left:$margin-horizontal;
 		}
 
 		.wrapper-66 {
-			width:66.33%;
-			margin-left:1%;
+			width:(100% - ((100% - (2 * $margin-horizontal)) / 3)) - $margin-horizontal;
+			margin-left:$margin-horizontal;
 
 			&:first-child {
 				margin-left:0;
@@ -144,57 +126,20 @@
 @include viewport(768) {
 	.wrapper-25 {
 		width:25%;
-
-		.padded-content {
-			padding:8%;
-			width:84%;
-		}
-	}
-
-	.wrapper-50 {
-		.padded-content {
-			padding:4%;
-			width:92%;
-		}
-	}
-
-	.wrapper-33 {
-		.padded-content {
-			padding:6%;
-			width:88%;
-		}
-	}
-
-	.wrapper-66 {
-		.padded-content {
-			padding:3%;
-			width:94%;
-		}
 	}
 
 	.wrapper-75 {
 		width:75%;
-
-		.padded-content {
-			padding:2.66%;
-			width:94.33%;
-		}
 	}
 
-
-	.wrapper-75 + .wrapper-25, .wrapper-25.with-75-right  {
+	.wrapper-75 + .wrapper-25, .wrapper-25.with-75-right {
 		width:25%;
-
-		.padded-content {
-			padding:8%;
-			width:84%;
-		}
 	}
 
 	.with-margin { 
 		.wrapper-25, .wrapper-75 + .wrapper-25, .wrapper-25.with-75-right  {
-			margin-left: 1%;
-		    width:24.25%;
+			margin-left: $margin-horizontal;
+		    width:((100% - ($margin-horizontal* 3)) /4);
 
 		    &:first-child {
 		      margin-left:0;
@@ -202,8 +147,8 @@
 		}
 
 		.wrapper-75 {
-			width:74.75%;
-			margin-left:1%;
+			width:100% - ((100% - ($margin-horizontal* 3)) /4) - $margin-horizontal;
+			margin-left:$margin-horizontal;
 
 			&:first-child {
 				margin-left:0;
@@ -214,9 +159,10 @@
 
 
 .padded-content {
-	padding:4%;
+	padding: $padding-vertical $padding-horizontal;
 	float:left;
-	width:92%; /*Not using borderbox for ie7 support*/
+	width:100%;
+	box-sizing:border-box;
 
 	&.horizontal {
 		padding-top:0;
@@ -224,9 +170,6 @@
 	}
 
 	@include viewport(600) {
-		padding:3%;
-		width:94%; /*Not using borderbox for ie7 support*/
-
 		&.horizontal {
 			padding-top:0;
 			padding-bottom: 0;
@@ -234,8 +177,6 @@
 	}
 
 	@include viewport(768) {
-		padding:2%;
-		width:96%; /*Not using borderbox for ie7 support*/
 		&.horizontal {
 			padding-top:0;
 			padding-bottom: 0;
@@ -249,7 +190,18 @@
 	padding-bottom: 0;
 }
 
-/*Spacings*/
+/*Use this on a wrapper-container or wrapper-100 
+to give it left and right padding on mobile */
+.mobile-padding {
+	padding: 0 $padding-horizontal;
+	box-sizing:border-box;
+
+	@include viewport(980) {
+		padding: 0;
+	}
+}
+
+/*Margins*/
 .margin-bottom {
 	margin-bottom:$setSpacing!important;
 } 
@@ -273,6 +225,16 @@
 .no-margin-top {
 	margin-top:0!important;
 } 
+
+.vert-align-center {
+	@include flexBox();
+	@include flexAlign(center);
+	align-items: center;
+}
+
+
+/*
+If you choose to show this stylesheet for ie9 uncomment these 
 .ie9 .with-equal-height {
 	overflow:hidden;
 	margin-bottom:$setSpacing;
@@ -282,3 +244,5 @@
 	padding-bottom:100%;
 	margin-bottom:-100%;
 }
+*/
+

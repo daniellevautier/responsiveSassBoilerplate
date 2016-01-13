@@ -31,7 +31,7 @@
 <header>  
      <!-- .container is used if there are full width elements on the page otherwise just have one wrapper -->
     <div class="container">
-        <h1>Company</h1>
+        <h1>Page Title</h1>
         <!-- helpful shortcute for screen readers -->
         <section class="accessibility-help hide">
             <h2 class="hide">Accessibility links</h2>
@@ -46,7 +46,7 @@
     </div>
 </header>
 
-<div id="main-content"><div class="container">
+<div id="main-content"><div class="container background-colour">
 	<div class="wrapper-100">
 		<div class="padded-content">
 			<h1>.wrapper-100</h1>
@@ -55,18 +55,26 @@
 		</div>
 	</div>
 	<div class="wrapper-container with-margin with-equal-height">
-		<div class="wrapper-50">
-			<div class="padded-content">
-				<h2>.wrapper-50</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
-				<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sitetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+		<div class="wrapper-50 vert-align-center">
+			<div class="padded-content" >
+				<h2>.wrapper-50 vertically aligned</h2>
 			</div>
 		</div>
 		<div class="wrapper-50">
 			<div class="padded-content">
-				<h2>.wrapper-50</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
-				<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+				<h2>.wrapper-50 form</h2>
+				<p>This form is using HTML5 validation</p>
+				<form>
+					<div class="form-field-wrapper placeholder-label">
+						<label for="textLabel">Text label</label>
+						<input type="text" placeholder="Text"id="textLabel" required/>
+					</div>
+					<div class="form-field-wrapper placeholder-label">
+						<label for="emailLabel">Email label</label>
+						<input type="email" placeholder="Email" id="emailLabel" required/>
+					</div>
+					<button>Button</button>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -156,6 +164,7 @@
 		<div class="wrapper-33">
 			<div class="padded-content">
 				<h4>.wrapper-33</h4>
+
 				<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet en.</p>
 			</div>
 		</div>
@@ -172,6 +181,100 @@
 				<h4>.wrapper-66</h4>
 				<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet en.</p>
 			</div>
+		</div>
+	</div>
+
+</div><!-- end container -->
+<div class="container">
+	<div class="wrapper-100">
+		<h1>.wrapper-100</h1>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
+		<p><strong>Suspendisse metus</strong> nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+	</div>
+	<div class="wrapper-container with-margin with-equal-height mobile-padding ">
+		<div class="wrapper-50">
+			<h2>.wrapper-50</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sitetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+		</div>
+		<div class="wrapper-50">
+			<h2>.wrapper-50</h2>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+		</div>
+	</div>
+	<div class="wrapper-container with-margin with-equal-height">
+		<div class="wrapper-33">
+			<h3>.wrapper-33</h3>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>	
+		</div>
+		<div class="wrapper-33">
+			<h3>.wrapper-33</h3>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
+		</div>
+		<div class="wrapper-33">
+			<h3>.wrapper-33</h3>
+			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+		</div>
+	</div>
+	<div class="wrapper-container with-margin with-equal-height">
+		<div class="wrapper-25">
+			<h4>.wrapper-25</h4>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+		</div>
+		<div class="wrapper-25">
+			<h4>.wrapper-25</h4>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed,</p>
+		</div>
+		<div class="wrapper-25">
+			<h4>.wrapper-25</h4>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+		</div>
+		<div class="wrapper-25">
+			<h4>.wrapper-25</h4>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+		</div>
+	</div>
+	<div class="wrapper-container with-margin with-equal-height">
+		<div class="wrapper-25 with-75-right">
+			<h4>.wrapper-25</h4>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+		</div>
+		<div class="wrapper-75">
+			<h4>.wrapper-75</h4>
+			<p>Suspendisse metus nisl, fringilla sezd laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet en.</p>
+		</div>
+	</div>
+	<div class="wrapper-container with-margin with-equal-height">
+		<div class="wrapper-75">
+			<h4>.wrapper-75</h4>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+		</div>
+		<div class="wrapper-25">
+			<h4>.wrapper-25</h4>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet en.</p>
+		</div>
+	</div>
+	<div class="wrapper-container with-margin with-equal-height">
+		<div class="wrapper-66">
+			<h4>.wrapper-66</h4>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+		</div>
+		<div class="wrapper-33">
+			<h4>.wrapper-33</h4>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet en.</p>
+		</div>
+	</div>
+	<div class="wrapper-container with-margin with-equal-height">
+		<div class="wrapper-33">
+			<h4>.wrapper-33</h4>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
+		</div>
+		<div class="wrapper-66">
+			<h4>.wrapper-66</h4>
+			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet en.</p>
 		</div>
 	</div>
 
