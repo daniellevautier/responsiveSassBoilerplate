@@ -191,6 +191,10 @@ $padding-vertical: ($setSpacing * 2); /*Has to be a pixel - setSpacing defined i
 	}
 }
 
+.mobile-margin {
+	margin: 0 4%;
+}
+
 /*Needed to overwrite previous selectors*/
 .with-75-right .padded-content.horizontal, .wrapper-75 + .wrapper-25 .padded-content.horizontal{
 	padding-top:0;
