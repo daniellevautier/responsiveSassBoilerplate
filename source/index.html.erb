@@ -130,4 +130,13 @@
 
 </div><!-- end container -->
 
+<!--Helper to include scripts in the footer for this page only -->
+<% content_for :callScripts do %>
+<% end %>
+
+<!--Helper to include JQuery in the footer for this page only.
+Note: $(function() already called -->
+<% content_for :footerscriptsInline do %>
+<% end %>
+
 <%= partial "footer" %>
