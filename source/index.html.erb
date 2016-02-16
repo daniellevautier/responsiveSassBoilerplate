@@ -1,4 +1,8 @@
 <%= partial "header" %>
+<div class="container">
+	<h1 class="padded until-desktop">Page Title</h1>
+</div>
+
 <div class="container background-colour">
 	<div class="wrapper-100">
 		<div class="padded-content">
@@ -17,19 +21,64 @@
 			<div class="padded-content">
 				<h2>.wrapper-50 form</h2>
 				<p>This form is using HTML5 validation</p>
+		
 				<form>
 					<div class="form-field-wrapper placeholder-label">
 						<label for="textLabel">Text label</label>
-						<input type="text" placeholder="Text"id="textLabel" required/>
+						<input type="text" placeholder="Text" id="textLabel" required/>
 					</div>
 					<div class="form-field-wrapper placeholder-label">
 						<label for="emailLabel">Email label</label>
 						<input type="email" placeholder="Email" id="emailLabel" required/>
+
 					</div>
-					<button>Button</button>
+					<div class="form-field-wrapper placeholder-label">
+						<label for="tel">Telephone label</label>
+						<input type="tel" placeholder="Telephone" id="tel" required/>
+					</div>
+					<div class="form-field-wrapper placeholder-label">
+						<label for="password">Password label</label>
+						<input type="password" id="password" required/>
+					</div>
+					<div class="form-field-wrapper placeholder-label">
+						<label for="selectBox">Select label</label>
+						<select id="selectBox">
+							<option value="">Please select...</option>
+							<option>Option 1</option>
+						</select>
+					</div>
+					<div class="form-field-wrapper checkbox-group">
+						<label>Checkbox Group</label>
+						<div class="form-field-wrapper checkbox">
+							<input type="checkbox" id="checkbox1">
+							<label for="checkbox1">Checkbox label</label>
+						</div>
+						<div class="form-field-wrapper checkbox">
+							<input type="checkbox" id="checkbox2">
+							<label for="checkbox2">Checkbox 2 label</label>
+						</div>
+					</div>
+					<div class="form-field-wrapper radio-group">
+						<label>Radio Group</label>
+						<div class="form-field-wrapper radio">
+							<input type="radio" id="radio" name="radioGroup" checked>
+							<label for="radio">Radio label</label>
+						</div>
+						<div class="form-field-wrapper radio">
+							<input type="radio" id="radio2" name="radioGroup">
+							<label for="radio2">Radio 2 label</label>
+						</div>
+					</div>
+					<div class="form-field-wrapper buttons">
+						<button>Button</button>
+						<input type="submit" Value="Submit"/>
+					</div>
 				</form>
 			</div>
 		</div>
+	</div>
+	<div class="padded-content">
+		<h2 class="section-heading">Section heading</h2>
 	</div>
 	<div class="wrapper-container with-margin with-equal-height">
 		<div class="wrapper-33">
@@ -139,12 +188,12 @@
 
 </div><!-- end container -->
 <div class="container">
-	<div class="wrapper-100">
+	<div class="wrapper-100 padded until-desktop">
 		<h1>.wrapper-100</h1>
 		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
 		<p><strong>Suspendisse metus</strong> nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
 	</div>
-	<div class="wrapper-container with-margin with-equal-height mobile-padding ">
+	<div class="wrapper-container with-margin with-equal-height padded">
 		<div class="wrapper-50">
 			<h2>.wrapper-50</h2>
 			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
@@ -156,7 +205,7 @@
 			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
 		</div>
 	</div>
-	<div class="wrapper-container with-margin with-equal-height">
+	<div class="wrapper-container with-margin with-equal-height padded">
 		<div class="wrapper-33">
 			<h3>.wrapper-33</h3>
 			<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed commodo dolor, ac dapibus enim. Duis tincidunt est at sapien pharetra, et congue odio viverra.</p>
@@ -172,7 +221,7 @@
 			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
 		</div>
 	</div>
-	<div class="wrapper-container with-margin with-equal-height">
+	<div class="wrapper-container with-margin with-equal-height padded">
 		<div class="wrapper-25">
 			<h4>.wrapper-25</h4>
 			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
@@ -190,7 +239,7 @@
 			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
 		</div>
 	</div>
-	<div class="wrapper-container with-margin with-equal-height">
+	<div class="wrapper-container with-margin with-equal-height padded">
 		<div class="wrapper-25 with-75-right">
 			<h4>.wrapper-25</h4>
 			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
@@ -200,7 +249,7 @@
 			<p>Suspendisse metus nisl, fringilla sezd laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet en.</p>
 		</div>
 	</div>
-	<div class="wrapper-container with-margin with-equal-height">
+	<div class="wrapper-container with-margin with-equal-height padded">
 		<div class="wrapper-75">
 			<h4>.wrapper-75</h4>
 			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
@@ -210,7 +259,7 @@
 			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet en.</p>
 		</div>
 	</div>
-	<div class="wrapper-container with-margin with-equal-height">
+	<div class="wrapper-container with-margin with-equal-height padded">
 		<div class="wrapper-66">
 			<h4>.wrapper-66</h4>
 			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>
@@ -220,7 +269,7 @@
 			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet en.</p>
 		</div>
 	</div>
-	<div class="wrapper-container with-margin with-equal-height">
+	<div class="wrapper-container with-margin with-equal-height padded">
 		<div class="wrapper-33">
 			<h4>.wrapper-33</h4>
 			<p>Suspendisse metus nisl, fringilla sed laoreet vitae, vestibulum at orci. Pellentesque elit mauris, finibus sit amet enim sed, faucibus cursus neque. Curabitur gravida orci sit amet enim rhoncus viverra. Suspendisse gravida massa eu justo tincidunt porta. Maecenas tempus accumsan ante at sodales. Proin nec consectetur lectus, ac tempor elit. Nulla non euismod elit. Sed eu sagittis arcu.</p>

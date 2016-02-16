@@ -53,7 +53,11 @@
         align-items: $position;
 }
 
-
+@mixin flexDirection($direction) {
+ -webkit-flex-direction: $direction;
+     -ms-flex-direction: $direction;
+         flex-direction: $direction;
+}
 
 
 @mixin cssTransform($transformProperty) {
@@ -75,18 +79,35 @@ $secondaryFont: Georgia, Times, sans-serif;
 /*Use these if using Google fonts where more than one property
 is required e.g. font-weight*/
 @mixin primaryFont() {
-  font-family: Arial, sans-serif;
+  font-family:$primaryFont;
   font-weight:300;
 }
 
 @mixin secondaryFont() {
-  font-family: Georgia, Times, sans-serif;
+  font-family:$secondaryFont;
   font-weight:300;
 }
 
 /*Set Sizes*/
 $desktop: 1200px; /*Set container and desktop variable for media queries*/
 $setSpacing: 12px; /*Set global spacing*/
+
+$margin-horizontal: 3%; /*Has to be a percentage*/
+
+$margin-vertical: $setSpacing; /*Has to be a pixel*/
+$margin-vertical-tablet: $setSpacing * 2; /*Has to be a pixel*/
+$margin-vertical-desktop: $setSpacing * 3; /*Has to be a pixel*/
+
+$padding-horizontal: $setSpacing * 1.5; /*Has to be a pixel - setSpacing defined in variables*/
+$padding-horizontal-tablet: $setSpacing * 2; /*Has to be a pixel*/
+$padding-horizontal-desktop: $setSpacing * 3; /*Has to be a pixel*/
+
+$padding-vertical: $margin-vertical; /*Has to be a pixel - setSpacing defined in variables*/
+$padding-vertical-tablet: $margin-vertical-tablet; /*Has to be a pixel*/
+$padding-vertical-desktop: $margin-vertical-desktop; /*Has to be a pixel*/
+
+$desktopBreak: $desktop + ($padding-horizontal-desktop * 2);
+
 
 /*Colours*/
 $red:#A80D02;

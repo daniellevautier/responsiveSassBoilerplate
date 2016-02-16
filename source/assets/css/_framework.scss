@@ -1,15 +1,13 @@
 /* Framwork CSS */
 /* Please set your spacing below with the relevant percentage or pixels */
 /* $setSpacing defined in variables */
-$margin-horizontal: 2%; /*Has to be a percentage*/
-$margin-vertical: $setSpacing; /*Should be in pixels*/
-$margin-vertical-tablet: $setSpacing * 1.5; /*Should be in pixels*/
-$margin-vertical-desktop: $setSpacing * 2; /*Should be in pixels*/
 
-$padding-horizontal: $setSpacing * 2; /*Can be either pixels or %*/
-$padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
+/* Desktop (small) viewport is set up as 980 to target 1024 x 768 resolutions */
 
-/* Desktop viewport is set up as 980 to target 1024 x 768 resolutions */
+/*Set this if you want to support box-sizing throughout */
+div, section, article, header, footer, nav, form {
+	box-sizing:border-box;
+}
 
 /*Central wrapper*/
 .container {
@@ -162,7 +160,6 @@ $padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
 	padding: $padding-vertical $padding-horizontal;
 	float:left;
 	width:100%;
-	box-sizing:border-box;
 
 	&.horizontal {
 		padding-top:0;
@@ -177,6 +174,15 @@ $padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
 	}
 
 	@include viewport(768) {
+	padding: $padding-vertical-tablet $padding-horizontal-tablet;
+		&.horizontal {
+			padding-top:0;
+			padding-bottom: 0;
+		}
+	}
+
+	@include viewport(980) {
+	padding: $padding-vertical-desktop $padding-horizontal-desktop;
 		&.horizontal {
 			padding-top:0;
 			padding-bottom: 0;
@@ -190,37 +196,56 @@ $padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
 	padding-bottom: 0;
 }
 
+
 /*Use this on a wrapper-container or wrapper-100 
-to give it left and right padding on mobile */
-.mobile-padding {
+to give it left and right padding throughout */
+.padded {
 	padding: 0 $padding-horizontal;
-	box-sizing:border-box;
+
+	@include viewport(768) {
+		padding: 0 $padding-horizontal-tablet;
+	}
 
 	@include viewport(980) {
+		padding: 0 $padding-horizontal-desktop;
+	}
+}
+
+
+/*Use this on a wrapper-container with .padded if 
+you don't want padding at the final desktop breakpoint */
+.until-desktop {
+	@include viewport($desktopBreak) {
 		padding: 0;
 	}
 }
 
+
 /*Margins*/
 .margin-bottom {
-	margin-bottom:$setSpacing!important;
+	margin-bottom:$margin-vertical!important;
+	@include viewport(768) {
+		margin-bottom:$margin-vertical-tablet!important;
+	}
+	@include viewport(980) {
+		margin-bottom:$margin-vertical-desktop!important;
+	}
 } 
-
-.double-margin-bottom {
-	margin-bottom:$setSpacing * 2 !important;
-}
 
 .no-margin-bottom {
 	margin-bottom:0!important;
 }
 
 .margin-top {
-	margin-top:$setSpacing!important;
+	margin-top:$margin-vertical!important;
+	@include viewport(768) {
+		margin-top:$margin-vertical-tablet!important;
+	}
+	@include viewport(980) {
+		margin-top:$margin-vertical-desktop!important;
+	}
 } 
 
-.double-margin-top {
-	margin-top:$setSpacing * 2 !important;
-} 
 
 .no-margin-top {
 	margin-top:0!important;
@@ -232,6 +257,15 @@ to give it left and right padding on mobile */
 	align-items: center;
 }
 
+/*Should be used inside a padded-content*/
+.section-heading {
+	text-align:center;	
+	.padded-contnet & {
+		padding:0 2%;
+		margin:0;
+	}
+	
+}
 
 /*
 If you choose to show this stylesheet for ie9 uncomment these 
