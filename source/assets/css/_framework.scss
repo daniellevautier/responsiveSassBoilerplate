@@ -1,15 +1,18 @@
 /* Framwork CSS */
 /* Please set your spacing below with the relevant percentage or pixels */
-/* $setSpacing defined in variables */
-$margin-horizontal: 2%; /*Has to be a percentage*/
-$margin-vertical: $setSpacing; /*Should be in pixels*/
-$margin-vertical-tablet: $setSpacing * 1.5; /*Should be in pixels*/
-$margin-vertical-desktop: $setSpacing * 2; /*Should be in pixels*/
 
-$padding-horizontal: $setSpacing * 2; /*Can be either pixels or %*/
-$padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
+$desktop: 1200px; /* Set container and desktop variable for media queries */
+$setSpacing: 12px; /* Set global spacing */
 
-/* Desktop viewport is set up as 980 to target 1024 x 768 resolutions */
+$margin-horizontal: 2%; /* Has to be a percentage */
+$margin-vertical: $setSpacing; /* Should be in pixels */
+$margin-vertical-tablet: $setSpacing * 1.5; /* Should be in pixels */
+$margin-vertical-desktop: $setSpacing * 2; /* Should be in pixels */
+
+$padding-horizontal: $setSpacing * 2; /* Can be either pixels or % */
+$padding-vertical: $setSpacing * 2; /* Can be either pixels or % */
+
+/* Desktop viewport is set up as 980 to target 1024 x 768 resolutions (with scrollbar) */
 
 /*Central wrapper*/
 .container {
@@ -19,22 +22,45 @@ $padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
 }
 
 /*Structure*/
-.wrapper-100, .wrapper-33, .wrapper-50, .wrapper-25, .wrapper-75, .wrapper-66 {
+.wrapper-100, .wrapper-33, .wrapper-50, .wrapper-25, 
+.wrapper-75, .wrapper-66, .wrapper-60, .wrapper-40, 
+.wrapper-80, .wrapper-20 {
     width:100%;
     float:left;
-    margin-bottom:$margin-vertical;
-    @include viewport(660) {
-    	margin-bottom: $margin-vertical-tablet;
-    }
-     @include viewport(980) {
-    	margin-bottom: $margin-vertical-desktop;
-    }
+
+    &.mobile-padding {
+		padding: 0 $padding-horizontal;
+	
+		@include viewport(980) {
+			padding: 0;
+		}
+	}
+
+	&.mobile-margin {
+		margin: 0 $padding-horizontal;
+		width:calc(100% - (#{$padding-horizontal * 2}));
+	
+		@include viewport(980) {
+			margin: 0;
+			width:100%;
+		}
+	}
 }
 
 .wrapper-container {
 	width:100%;
     float:left;
     clear:left;
+
+    &.mobile-margin {
+		margin: 0 $padding-horizontal;
+		width:calc(100% - (#{$padding-horizontal * 2}));
+	
+		@include viewport(980) {
+			margin: 0;
+			width:100%;
+		}
+	}
 }
 
 @include viewport(600) {
@@ -43,8 +69,16 @@ $padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
 	  @include flexWrap();
 
 	 	> div {
-	 		float:none; /*Required for IOS8*/
+	 		float:none; /* Required for IOS8 */
 	 	}
+	}
+
+	.wrapper-80 {
+		width:80%;
+	}
+
+	.wrapper-20 {
+		width:20%;
 	}
 
 	.wrapper-50 {
@@ -84,23 +118,48 @@ $padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
 			margin-left:0;
 			width:100%;
 		}
+
+		.wrapper-20 {
+			margin-left: $margin-horizontal;
+		    width:(20% - (($margin-horizontal * 4) / 5));
+		    &:first-child {
+		      margin-left:0;
+		    }
+		}
+
+		.wrapper-80 {
+			margin-left: $margin-horizontal;
+		    width:(100% - (20% - (($margin-horizontal * 4) / 5)) - $margin-horizontal);
+		    &:first-child {
+		      margin-left:0;
+		    }
+		}
 	}
 }
 
 @include viewport(660) {
 	.wrapper-66 {
-		width:66.66%;
+		width: 66.66%;
+    	width: calc((100% / 3) * 2);
 	}
 	
 	.wrapper-33 {
-		width:33.33%;
+		width: 33.33%;
+    	width: calc(100% / 3);
 	}
 
-
+	.wrapper-60 {
+		width:60%;
+	}
+	
+	.wrapper-40 {
+		width:40%;
+	}
+	
 	.with-margin { 
 		.wrapper-33 {
 		   margin-left: $margin-horizontal;
-		   width:((100% - (2 * $margin-horizontal)) / 3);
+		   width:((100% - ($margin-horizontal * 2)) / 3);
 
 		    &:first-child {
 		      margin-left:0;
@@ -112,7 +171,25 @@ $padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
 		}
 
 		.wrapper-66 {
-			width:(100% - ((100% - (2 * $margin-horizontal)) / 3)) - $margin-horizontal;
+			margin-left:$margin-horizontal;
+			width:(66.66667% - (($margin-horizontal / 6 ) * 2));
+
+			&:first-child {
+				margin-left:0;
+			}
+		}
+
+		.wrapper-40 {
+		 	margin-left: $margin-horizontal;
+		    width:(40% - (($margin-horizontal * 3) / 5));
+
+		    &:first-child {
+		      margin-left:0;
+		    }
+		}
+
+		.wrapper-60 {
+			width:(60% - (($margin-horizontal / 10 ) * 4)) ;
 			margin-left:$margin-horizontal;
 
 			&:first-child {
@@ -122,6 +199,11 @@ $padding-vertical: $setSpacing * 2; /*Can be either pixels or %*/
 	}
 }
 
+@media (max-width:767px) {
+	.fullwidth-until-tablet {
+		width:100%!important;
+	}
+}
 
 @include viewport(768) {
 	.wrapper-25 {
@@ -203,11 +285,24 @@ to give it left and right padding on mobile */
 
 /*Margins*/
 .margin-bottom {
-	margin-bottom:$setSpacing!important;
+	margin-bottom:$margin-vertical!important;
+    @include viewport(660) {
+    	margin-bottom: $margin-vertical-tablet!important;
+    }
+    @include viewport(980) {
+    	margin-bottom: $margin-vertical-desktop!important;
+    }
 } 
 
 .double-margin-bottom {
-	margin-bottom:$setSpacing * 2 !important;
+	margin-bottom:$setSpacing * 2!important;
+
+	@include viewport(660) {
+    	margin-bottom: $margin-vertical-tablet * 2!important;
+    }
+    @include viewport(980) {
+    	margin-bottom: $margin-vertical-desktop * 2 !important;
+    }
 }
 
 .no-margin-bottom {
@@ -216,11 +311,25 @@ to give it left and right padding on mobile */
 
 .margin-top {
 	margin-top:$setSpacing!important;
+
+	@include viewport(660) {
+    	margin-top: $margin-vertical-tablet * 2!important;
+    }
+    @include viewport(980) {
+    	margin-top: $margin-vertical-desktop * 2 !important;
+    }
 } 
 
 .double-margin-top {
-	margin-top:$setSpacing * 2 !important;
-} 
+	margin-top:$setSpacing * 2!important;
+
+	@include viewport(660) {
+    	margin-top: $margin-vertical-tablet * 2!important;
+    }
+    @include viewport(980) {
+    	margin-top: $margin-vertical-desktop * 2 !important;
+    }
+}
 
 .no-margin-top {
 	margin-top:0!important;
@@ -246,3 +355,13 @@ If you choose to show this stylesheet for ie9 uncomment these
 }
 */
 
+.center-framework {
+	text-align:center;
+		> div {
+		text-align:initial;
+		float:none;
+		display:inline-block;
+		margin-left:auto!important;
+		margin-right:auto!important;
+		}
+}

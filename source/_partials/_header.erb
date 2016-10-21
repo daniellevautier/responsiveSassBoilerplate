@@ -27,7 +27,10 @@
 
 </head>
 
-<body>
+
+<body class="<% if content_for?(:bodyClass) %><%= yield_content :bodyClass %><% end %>">
+ <!-- You can set a class for the body tag on individual pages -->
+
 <header>  
      <!-- .container is used if there are full width elements on the page otherwise just have one wrapper -->
     <div class="container">
@@ -40,7 +43,26 @@
             </ul> 
         </section>
         
+          
         <nav>
+            <ul>
+                <li>Framework
+                    <ul>
+                        <li><a href="#framework">Framework (default)</a></li>
+                        <li><a href="#frameworkMargin">Framework (with horizontal and bottom margin)</a></li>
+                        <li><a href="#frameworkPadding">Framework (with internal padding)</a></li>
+                        <li><a href="#frameworkAll">Framework (without internal padding)</a></li>
+                    </ul>
+                </li>
+                <li>Framework Features
+                    <ul>
+                        <li><a href="#frameworkFeatures">Mobile / tablet only gutter spacing</a></li>
+                        <li><a href="#frameworkFeaturesEqualHeight">FlexBox equal height columns</a></li>
+                        <li><a href="#frameworkFeaturesAlign">FlexBox vertically aligning</a></li>
+                        <li><a href="#frameworkCenterContent">Centering framework wrappers</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     
     </div>

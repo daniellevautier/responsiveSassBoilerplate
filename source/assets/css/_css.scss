@@ -12,26 +12,43 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 
 h1, .h1 {
 	font-size:40px;
-	padding:0 0 $setSpacing /2 0;
+	padding: 0;
+	margin:0 0 $setSpacing /2 0;
 }
 
 h2, .h2 {
 	font-size:32px;
-	padding:0 0 $setSpacing /2 0;
+	padding:0;
+	margin:0 0 $setSpacing /2 0;
 }
 
 h3, .h3 {
 	font-size:26px;
-	padding:0 0 $setSpacing /2 0;
+	padding:0;
+	margin:0 0 $setSpacing /2 0;
 }
 
 h4, .h4 {
 	font-size:20px;
-	padding:0 0 $setSpacing /2 0;
+	padding:0;
+	margin:0 0 $setSpacing /2 0;
 }
 
-p, ul, ol {
-	padding:0 0 $setSpacing /2 0;
+p {
+	padding:0;
+	margin:0 0 $setSpacing /2 0;
+}
+
+ul, ol {
+	padding:0;
+	margin:0 0 $setSpacing /2 20px;
+
+	&.no-style {
+		margin:0;
+		li {
+			list-style: none;
+		}
+	}
 }
 
 /*Form helpers*/
@@ -54,6 +71,7 @@ p, ul, ol {
 	color: #000;  
     opacity:1;
 }
+
 
 .form-field-wrapper {
 	float:left;
@@ -118,7 +136,7 @@ form {
 	margin:$setSpacing/2 0;
 }
 
-/*Elastic Videoes / Maps*/
+/*Elastic Videoes / Iframes*/
 .item-container {
 	position: relative;
 	padding-bottom: 56.25%;
@@ -137,11 +155,3 @@ form {
 	height: 100%;
 }
 
-.background-colour .wrapper-100,
-.background-colour .wrapper-50,
-.background-colour .wrapper-33,
-.background-colour .wrapper-25,
-.background-colour .wrapper-66,
-.background-colour .wrapper-75 {
-	background-color:pink;
-}

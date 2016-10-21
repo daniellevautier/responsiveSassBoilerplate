@@ -35,9 +35,9 @@
 }
 
 @mixin flexOrder($order) {
--webkit-order: $order;
-    -ms-order: $order;
-        order: $order;
+-ms-flex-order: $order;
+ -webkit-order: $order;
+         order: $order;
 }
 
 @mixin flexWrap() {
@@ -52,9 +52,6 @@
      -ms-flex-align: $position;
         align-items: $position;
 }
-
-
-
 
 @mixin cssTransform($transformProperty) {
   -webkit-transform: $transformProperty; /* Ch <36, Saf 5.1+, iOS, An =<4.4.4 */
@@ -83,10 +80,6 @@ is required e.g. font-weight*/
   font-family: Georgia, Times, sans-serif;
   font-weight:300;
 }
-
-/*Set Sizes*/
-$desktop: 1200px; /*Set container and desktop variable for media queries*/
-$setSpacing: 12px; /*Set global spacing*/
 
 /*Colours*/
 $red:#A80D02;

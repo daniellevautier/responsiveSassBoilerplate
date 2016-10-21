@@ -10,6 +10,10 @@ Currently the best combination for this project is:
 Windows users see [rubyinstaller.org](http://rubyinstaller.org/downloads/) for more details.
 
 ## Updates
++ 21.10.16
+++ Included [several fixes / requests](https://github.com/daniellevautier/responsiveSassBoilerplate/issues?q=is%3Aissue+is%3Aclosed)
+++ Changed layout order for Middleman partials
+++ Added setting page class variable 
 + 13.01.16 - Update to HTML, variables, removed and added mixins, prefixes and framework padding, see commit for more details
 + 12.05.15 - Update JQuery to 1.11.3
 + 10.02.15 - Added highDPI mixin  
