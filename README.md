@@ -15,6 +15,7 @@ Windows users see [rubyinstaller.org](http://rubyinstaller.org/downloads/) for m
   + Changed layout order for Middleman partials (/source only)
   + Added mobile-margin and mobile-padding options
   + Added wrapper-80 and wrapper-20 to framework
+  + Centering option for single wrappers
   + Updated index.html with demo framework overview
 + 13.01.16 - Update to HTML, variables, removed and added mixins, prefixes and framework padding, see commit for more details
 + 12.05.15 - Update JQuery to 1.11.3
