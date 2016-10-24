@@ -10,10 +10,11 @@ Currently the best combination for this project is:
 Windows users see [rubyinstaller.org](http://rubyinstaller.org/downloads/) for more details.
 
 ## Updates
-+ 21.10.16
-++ Included [several fixes / requests](https://github.com/daniellevautier/responsiveSassBoilerplate/issues?q=is%3Aissue+is%3Aclosed)
-++ Changed layout order for Middleman partials
-++ Added setting page class variable 
++ [21.10.16](https://github.com/daniellevautier/responsiveSassBoilerplate/commit/e6e4429d641f8353bd33fe34b5f0bcc11e4b8133)
+  + Included [several fixes / requests](https://github.com/daniellevautier/responsiveSassBoilerplate/issues?q=is%3Aissue+is%3Aclosed)
+  + Changed layout order for Middleman partials (/source only)
+  + Added wrapper-80 and wrapper-20 to framework
+  + Updated index.html with demo framework overview
 + 13.01.16 - Update to HTML, variables, removed and added mixins, prefixes and framework padding, see commit for more details
 + 12.05.15 - Update JQuery to 1.11.3
 + 10.02.15 - Added highDPI mixin  
@@ -22,11 +23,13 @@ Windows users see [rubyinstaller.org](http://rubyinstaller.org/downloads/) for m
 
 **A basic grid framework based on the following width classes:**
  + wrapper-100 
- + wrapper-33 
- + wrapper-50
- + wrapper-25
+ + wrapper-80 
  + wrapper-75
  + wrapper-66
+ + wrapper-50
+ + wrapper-33 
+ + wrapper-25
+ + wrapper-20
 
 **Note:** wrapper-container should be used as an immediate parent for all wrapper options except wrapper-100 e.g.
 
