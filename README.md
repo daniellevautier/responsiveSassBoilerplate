@@ -13,6 +13,7 @@ Windows users see [rubyinstaller.org](http://rubyinstaller.org/downloads/) for m
 + [21.10.16](https://github.com/daniellevautier/responsiveSassBoilerplate/commit/e6e4429d641f8353bd33fe34b5f0bcc11e4b8133)
   + Included [several fixes / requests](https://github.com/daniellevautier/responsiveSassBoilerplate/issues?q=is%3Aissue+is%3Aclosed)
   + Changed layout order for Middleman partials (/source only)
+  + Added mobile-margin and mobile-padding options
   + Added wrapper-80 and wrapper-20 to framework
   + Updated index.html with demo framework overview
 + 13.01.16 - Update to HTML, variables, removed and added mixins, prefixes and framework padding, see commit for more details
